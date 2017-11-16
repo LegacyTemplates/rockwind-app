@@ -1,0 +1,7 @@
+debug true
+name Rockwind SQLite Web App
+port 5000
+contentRoot ~/../app
+webRoot ~/../app
+db sqlite
+db.connection ~/northwind.sqlite

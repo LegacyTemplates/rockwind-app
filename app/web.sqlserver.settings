@@ -1,0 +1,7 @@
+debug true
+name Rockwind SQL Server Web App
+port 5000
+contentRoot ~/../rockwind
+webRoot ~/../rockwind
+db sqlserver
+db.connection Server=localhost;Database=northwind;User Id=test;Password=test;MultipleActiveResultSets=True;
