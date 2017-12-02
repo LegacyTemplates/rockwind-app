@@ -1,4 +1,3 @@
-debug true
 name Rockwind SQL Server Web App
 contentRoot ~/../rockwind
 webRoot ~/../rockwind

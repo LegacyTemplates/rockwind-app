@@ -1,4 +1,3 @@
-debug true
 name Rockwind MySql Web App
 contentRoot ~/../rockwind
 webRoot ~/../rockwind

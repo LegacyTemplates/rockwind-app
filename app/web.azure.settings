@@ -1,5 +1,4 @@
 # Note: values prefixed with '$' are resolved from Environment Variables
-debug false
 name Azure Blob SQL Server Web App
 db sqlserver
 db.connection $AZURE_SQL_CONNECTION_STRING
