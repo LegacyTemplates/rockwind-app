@@ -1,6 +1,5 @@
 debug true
 name Rockwind SQL Server Web App
-port 5000
 contentRoot ~/../rockwind
 webRoot ~/../rockwind
 db sqlserver

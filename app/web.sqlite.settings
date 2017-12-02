@@ -1,6 +1,5 @@
 debug true
 name Rockwind SQLite Web App
-port 5000
 contentRoot ~/..
 webRoot ~/../rockwind
 db sqlite

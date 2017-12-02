@@ -1,6 +1,5 @@
 debug true
 name Rockwind MySql Web App
-port 5000
 contentRoot ~/../rockwind
 webRoot ~/../rockwind
 db mysql
