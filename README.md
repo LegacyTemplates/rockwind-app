@@ -1,3 +1,13 @@
+# templates-webapp
+
+[![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/templates-webapp.png)](http://templates-webapp.web-templates.io/)
+
+> Browse [source code](https://github.com/NetCoreTemplates/templates-webapp), view live demo [templates-webapp.web-templates.io](http://templates-webapp.web-templates.io) and install with [dotnet-new](http://docs.servicestack.net/dotnet-new):
+
+    $ npm install -g servicestack-cli
+
+    $ dotnet-new templates-webapp ProjectName
+
 # .NET Core 2.0 Templates WebApp
 
 The `/app` folder contains the Rockwind Web App project.
@@ -13,7 +23,3 @@ The [/support/northwind-data](https://github.com/NetCoreWebApps/WebApp/tree/mast
     $ dotnet run sqlserver "Server=localhost;Database=northwind;User Id=test;Password=test;"
 
 See [templates.servicestack.net/docs/web-apps](http://templates.servicestack.net/docs/web-apps) for more info on ServiceStack Web Apps.
-
-[![](http://templates.servicestack.net/assets/img/screenshots/rockwind.png)](http://rockwind-sqlite.web-app.io)
-
-> Live Demo: http://rockwind-sqlite.web-app.io
