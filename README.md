@@ -4,7 +4,7 @@
 
 > Browse [source code](https://github.com/NetCoreTemplates/templates-webapp), view live demo [templates-webapp.web-templates.io](http://templates-webapp.web-templates.io) and install with [dotnet-new](http://docs.servicestack.net/dotnet-new):
 
-    $ npm install -g servicestack-cli
+    $ npm install -g @servicestack/cli
 
     $ dotnet-new templates-webapp ProjectName
 
