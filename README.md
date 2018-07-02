@@ -8,7 +8,7 @@
 
     $ dotnet-new templates-webapp ProjectName
 
-# .NET Core 2.0 Templates WebApp
+# .NET Core 2.1 Templates WebApp
 
 The `/app` folder contains the Rockwind Web App project.
 

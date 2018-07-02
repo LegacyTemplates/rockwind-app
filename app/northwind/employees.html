@@ -8,10 +8,11 @@ title: Employees
 
 {{ sql | dbSelect | htmlDump({ className: "table table-striped details" }) }}
 
-{{ `<script>
+{{#raw appendTo scripts}}
+<script>
 $('.details tbody tr').on('click', function(){
     var id = $(this).find("td:first").html();
     location.href = 'employee?id=' + id;
 })
-</script>` | appendTo: scripts }}
-
+</script>
+{{/raw}}

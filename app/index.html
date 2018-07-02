@@ -2,7 +2,7 @@
 <head>
     <title>Rockstars</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
-    {{ ifDebug | select: <script>{ '/js/hot-loader.js' | includeFile }</script> }}
+    {{#if debug}}<script>{{ '/js/hot-loader.js' | includeFile }}</script>{{/if}}
 <style>
 body {
     color: #444;
