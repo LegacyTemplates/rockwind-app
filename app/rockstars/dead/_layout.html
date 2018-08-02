@@ -2,7 +2,6 @@
 <html>
 <head>
 <title>Dead Rockstars - {{ title }}</title>
-{{#if debug}}<script>{{ '/js/hot-loader.js' | includeFile }}</script>{{/if}}
 <link href="../../default.css" rel="stylesheet" />
 <style type="text/css">
 body {
@@ -14,28 +13,30 @@ a {
 }
 </style>
 </head>
-    <body>
-        <a id="back" href="../../../">&#8592; Home</a>
+<body>
+    <i hidden>{{ '/js/hot-fileloader.js' | ifDebugIncludeScript }}</i>
+    
+    <a id="back" href="../../../">&#8592; Home</a>
 
-        <div id="page">
-            <div id="info">
-                <h6>Rocking the grave...</h6>
-                <p>
-                    <a id="home" href="../../../"></a>
-                </p>
-            </div>
-
-            <h1>{{ title }}</h1>
-            
-            {{ "menu-dead" | partial }}
-        
-            <div id="content">
-                {{ page }}
-                <b class="clear"></b>
-            </div>
-            
-            {{ "menu-alive" | partial }}
+    <div id="page">
+        <div id="info">
+            <h6>Rocking the grave...</h6>
+            <p>
+                <a id="home" href="../../../"></a>
+            </p>
         </div>
 
-    </body>
+        <h1>{{ title }}</h1>
+        
+        {{ "menu-dead" | partial }}
+    
+        <div id="content">
+            {{ page }}
+            <b class="clear"></b>
+        </div>
+        
+        {{ "menu-alive" | partial }}
+    </div>
+
+</body>
 </html>
