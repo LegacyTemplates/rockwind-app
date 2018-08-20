@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "362e9f0dc6cbbd416eb278cdb6ff93de1252654c"
+    "signature": "0cf91c1b78644a4c23805ced741248ad96e45ad4"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,10 +9,10 @@
       "app/1.0.0": {
         "dependencies": {
           "Markdig": "0.15.1",
-          "Microsoft.Data.Sqlite": "2.0.1",
+          "Microsoft.Data.Sqlite": "2.1.0",
           "Microsoft.NETCore.App": "2.1.0",
-          "MySql.Data": "8.0.11",
-          "Npgsql": "4.0.1",
+          "MySql.Data": "8.0.12",
+          "Npgsql": "4.0.2",
           "ServiceStack": "5.1.1",
           "ServiceStack.Api.OpenApi": "5.1.1",
           "ServiceStack.Aws": "5.1.1",
@@ -33,47 +33,48 @@
           "app.dll": {}
         }
       },
-      "AWSSDK.Core/3.3.22": {
+      "AWSSDK.Core/3.3.24.8": {
         "dependencies": {
-          "System.Net.Requests": "4.3.0"
+          "System.Net.Requests": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.5.0"
         },
         "runtime": {
           "lib/netstandard1.3/AWSSDK.Core.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.22.0"
+            "fileVersion": "3.3.24.8"
           }
         }
       },
-      "AWSSDK.DynamoDBv2/3.3.7.2": {
+      "AWSSDK.DynamoDBv2/3.3.12.2": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.22"
+          "AWSSDK.Core": "3.3.24.8"
         },
         "runtime": {
           "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.7.2"
+            "fileVersion": "3.3.12.2"
           }
         }
       },
-      "AWSSDK.S3/3.3.18.1": {
+      "AWSSDK.S3/3.3.20.4": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.22"
+          "AWSSDK.Core": "3.3.24.8"
         },
         "runtime": {
           "lib/netstandard1.3/AWSSDK.S3.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.18.1"
+            "fileVersion": "3.3.20.4"
           }
         }
       },
-      "AWSSDK.SQS/3.3.3.6": {
+      "AWSSDK.SQS/3.3.3.16": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.22"
+          "AWSSDK.Core": "3.3.24.8"
         },
         "runtime": {
           "lib/netstandard1.3/AWSSDK.SQS.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.3.6"
+            "fileVersion": "3.3.3.16"
           }
         }
       },
@@ -148,20 +149,20 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite/2.0.1": {
+      "Microsoft.Data.Sqlite/2.1.0": {
         "dependencies": {
-          "Microsoft.Data.Sqlite.Core": "2.0.1",
-          "SQLitePCLRaw.bundle_green": "1.1.7"
+          "Microsoft.Data.Sqlite.Core": "2.1.0",
+          "SQLitePCLRaw.bundle_green": "1.1.11"
         }
       },
-      "Microsoft.Data.Sqlite.Core/2.0.1": {
+      "Microsoft.Data.Sqlite.Core/2.1.0": {
         "dependencies": {
-          "SQLitePCLRaw.core": "1.1.7"
+          "SQLitePCLRaw.core": "1.1.11"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Data.Sqlite.dll": {
-            "assemblyVersion": "2.0.1.0",
-            "fileVersion": "2.0.1.18051"
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.18136"
           }
         }
       },
@@ -258,15 +259,15 @@
           "Microsoft.NETCore.Targets": "2.1.0"
         }
       },
-      "MySql.Data/8.0.11": {
+      "MySql.Data/8.0.12": {
         "dependencies": {
           "Google.Protobuf": "3.5.1",
-          "System.Configuration.ConfigurationManager": "4.4.0"
+          "System.Configuration.ConfigurationManager": "4.4.1"
         },
         "runtime": {
           "lib/netcoreapp2.0/MySql.Data.dll": {
-            "assemblyVersion": "8.0.11.0",
-            "fileVersion": "8.0.11.0"
+            "assemblyVersion": "8.0.12.0",
+            "fileVersion": "8.0.12.0"
           }
         }
       },
@@ -275,14 +276,38 @@
           "Microsoft.NETCore.Platforms": "2.1.0"
         }
       },
-      "Npgsql/4.0.1": {
+      "Npgsql/4.0.2": {
         "dependencies": {
           "System.ValueTuple": "4.5.0"
         },
         "runtime": {
           "lib/netstandard2.0/Npgsql.dll": {
-            "assemblyVersion": "4.0.1.0",
-            "fileVersion": "4.0.1.0"
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.0.2.0"
+          }
+        }
+      },
+      "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+        "runtimeTargets": {
+          "runtime/debian.8-x64/native/_._": {
+            "rid": "debian.8-x64",
+            "assetType": "native"
+          }
+        }
+      },
+      "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+        "runtimeTargets": {
+          "runtime/fedora.23-x64/native/_._": {
+            "rid": "fedora.23-x64",
+            "assetType": "native"
+          }
+        }
+      },
+      "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+        "runtimeTargets": {
+          "runtime/fedora.24-x64/native/_._": {
+            "rid": "fedora.24-x64",
+            "assetType": "native"
           }
         }
       },
@@ -290,6 +315,76 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0",
           "Microsoft.NETCore.Targets": "2.1.0"
+        }
+      },
+      "runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+        "dependencies": {
+          "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2",
+          "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2"
+        }
+      },
+      "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+        "runtimeTargets": {
+          "runtime/opensuse.13.2-x64/native/_._": {
+            "rid": "opensuse.13.2-x64",
+            "assetType": "native"
+          }
+        }
+      },
+      "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+        "runtimeTargets": {
+          "runtime/opensuse.42.1-x64/native/_._": {
+            "rid": "opensuse.42.1-x64",
+            "assetType": "native"
+          }
+        }
+      },
+      "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+        "runtimeTargets": {
+          "runtime/osx.10.10-x64/native/_._": {
+            "rid": "osx.10.10-x64",
+            "assetType": "native"
+          }
+        }
+      },
+      "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+        "runtimeTargets": {
+          "runtime/rhel.7-x64/native/_._": {
+            "rid": "rhel.7-x64",
+            "assetType": "native"
+          }
+        }
+      },
+      "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+        "runtimeTargets": {
+          "runtime/ubuntu.14.04-x64/native/_._": {
+            "rid": "ubuntu.14.04-x64",
+            "assetType": "native"
+          }
+        }
+      },
+      "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+        "runtimeTargets": {
+          "runtime/ubuntu.16.04-x64/native/_._": {
+            "rid": "ubuntu.16.04-x64",
+            "assetType": "native"
+          }
+        }
+      },
+      "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+        "runtimeTargets": {
+          "runtime/ubuntu.16.10-x64/native/_._": {
+            "rid": "ubuntu.16.10-x64",
+            "assetType": "native"
+          }
         }
       },
       "ServiceStack/5.1.1": {
@@ -309,7 +404,7 @@
         "dependencies": {
           "ServiceStack": "5.1.1",
           "System.Runtime.Serialization.Primitives": "4.3.0",
-          "System.ServiceModel.Primitives": "4.4.0",
+          "System.ServiceModel.Primitives": "4.5.3",
           "System.Xml.XmlSerializer": "4.3.0"
         },
         "runtime": {
@@ -321,12 +416,12 @@
       },
       "ServiceStack.Aws/5.1.1": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.22",
-          "AWSSDK.DynamoDBv2": "3.3.7.2",
-          "AWSSDK.S3": "3.3.18.1",
-          "AWSSDK.SQS": "3.3.3.6",
+          "AWSSDK.Core": "3.3.24.8",
+          "AWSSDK.DynamoDBv2": "3.3.12.2",
+          "AWSSDK.S3": "3.3.20.4",
+          "AWSSDK.SQS": "3.3.3.16",
           "ServiceStack": "5.1.1",
-          "System.ServiceModel.Primitives": "4.4.0"
+          "System.ServiceModel.Primitives": "4.5.3"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.Aws.dll": {
@@ -354,7 +449,7 @@
           "ServiceStack.Interfaces": "5.1.1",
           "ServiceStack.Text": "5.1.1",
           "System.Net.Requests": "4.3.0",
-          "System.ServiceModel.Primitives": "4.4.0",
+          "System.ServiceModel.Primitives": "4.5.3",
           "System.Xml.XmlSerializer": "4.3.0"
         },
         "runtime": {
@@ -369,7 +464,7 @@
           "ServiceStack.Interfaces.Core": "5.1.1",
           "ServiceStack.Text.Core": "5.1.1",
           "System.Net.Requests": "4.3.0",
-          "System.ServiceModel.Primitives": "4.4.0",
+          "System.ServiceModel.Primitives": "4.5.3",
           "System.Xml.XmlSerializer": "4.3.0"
         },
         "runtime": {
@@ -386,6 +481,7 @@
           "System.ComponentModel.Primitives": "4.3.0",
           "System.Data.Common": "4.3.0",
           "System.Net.NetworkInformation": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.5.0",
           "System.Runtime.Serialization.Primitives": "4.3.0"
         },
         "runtime": {
@@ -402,6 +498,7 @@
           "System.ComponentModel.Primitives": "4.3.0",
           "System.Data.Common": "4.3.0",
           "System.Net.NetworkInformation": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.5.0",
           "System.Runtime.Serialization.Primitives": "4.3.0"
         },
         "runtime": {
@@ -449,7 +546,8 @@
       "ServiceStack.OrmLite/5.1.1": {
         "dependencies": {
           "ServiceStack.Common": "5.1.1",
-          "System.ComponentModel.Primitives": "4.3.0"
+          "System.ComponentModel.Primitives": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.5.0"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.OrmLite.dll": {
@@ -460,7 +558,7 @@
       },
       "ServiceStack.OrmLite.MySql/5.1.1": {
         "dependencies": {
-          "MySql.Data": "8.0.11",
+          "MySql.Data": "8.0.12",
           "ServiceStack.OrmLite": "5.1.1"
         },
         "runtime": {
@@ -472,7 +570,7 @@
       },
       "ServiceStack.OrmLite.PostgreSQL/5.1.1": {
         "dependencies": {
-          "Npgsql": "4.0.1",
+          "Npgsql": "4.0.2",
           "ServiceStack.OrmLite": "5.1.1"
         },
         "runtime": {
@@ -484,7 +582,7 @@
       },
       "ServiceStack.OrmLite.Sqlite/5.1.1": {
         "dependencies": {
-          "Microsoft.Data.Sqlite": "2.0.1",
+          "Microsoft.Data.Sqlite": "2.1.0",
           "ServiceStack.OrmLite": "5.1.1"
         },
         "runtime": {
@@ -510,7 +608,7 @@
           "ServiceStack.Common": "5.1.1",
           "System.Data.Common": "4.3.0",
           "System.Net.NameResolution": "4.3.0",
-          "System.Net.Security": "4.3.1"
+          "System.Net.Security": "4.3.2"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.Redis.dll": {
@@ -548,38 +646,63 @@
           }
         }
       },
-      "SQLitePCLRaw.bundle_green/1.1.7": {
+      "SQLitePCLRaw.bundle_green/1.1.11": {
         "dependencies": {
-          "SQLitePCLRaw.core": "1.1.7",
-          "SQLitePCLRaw.lib.e_sqlite3.linux": "1.1.7",
-          "SQLitePCLRaw.lib.e_sqlite3.osx": "1.1.7",
-          "SQLitePCLRaw.lib.e_sqlite3.v110_xp": "1.1.7",
-          "SQLitePCLRaw.provider.e_sqlite3.netstandard11": "1.1.7"
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.linux": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.osx": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.v110_xp": "1.1.11",
+          "SQLitePCLRaw.provider.e_sqlite3.netstandard11": "1.1.11"
         },
         "runtime": {
           "lib/netcoreapp/SQLitePCLRaw.batteries_green.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.1.11.121",
             "fileVersion": "1.0.0.0"
           },
           "lib/netcoreapp/SQLitePCLRaw.batteries_v2.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.1.11.121",
             "fileVersion": "1.0.0.0"
           }
         }
       },
-      "SQLitePCLRaw.core/1.1.7": {
+      "SQLitePCLRaw.core/1.1.11": {
         "dependencies": {
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
           "lib/netstandard1.1/SQLitePCLRaw.core.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.1.11.121",
             "fileVersion": "1.0.0.0"
           }
         }
       },
-      "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.7": {
+      "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.11": {
         "runtimeTargets": {
+          "runtimes/alpine-x64/native/libe_sqlite3.so": {
+            "rid": "alpine-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm/native/libe_sqlite3.so": {
+            "rid": "linux-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm64/native/libe_sqlite3.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-armel/native/libe_sqlite3.so": {
+            "rid": "linux-armel",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-musl-x64/native/libe_sqlite3.so": {
+            "rid": "linux-musl-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
           "runtimes/linux-x64/native/libe_sqlite3.so": {
             "rid": "linux-x64",
             "assetType": "native",
@@ -592,7 +715,7 @@
           }
         }
       },
-      "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.7": {
+      "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.11": {
         "runtimeTargets": {
           "runtimes/osx-x64/native/libe_sqlite3.dylib": {
             "rid": "osx-x64",
@@ -601,28 +724,33 @@
           }
         }
       },
-      "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.7": {
+      "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.11": {
         "runtimeTargets": {
-          "runtimes/win7-x64/native/e_sqlite3.dll": {
-            "rid": "win7-x64",
+          "runtimes/win-x64/native/e_sqlite3.dll": {
+            "rid": "win-x64",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           },
-          "runtimes/win7-x86/native/e_sqlite3.dll": {
-            "rid": "win7-x86",
+          "runtimes/win-x86/native/e_sqlite3.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win8-arm/native/e_sqlite3.dll": {
+            "rid": "win8-arm",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           }
         }
       },
-      "SQLitePCLRaw.provider.e_sqlite3.netstandard11/1.1.7": {
+      "SQLitePCLRaw.provider.e_sqlite3.netstandard11/1.1.11": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "SQLitePCLRaw.core": "1.1.7"
+          "SQLitePCLRaw.core": "1.1.11"
         },
         "runtime": {
           "lib/netstandard1.1/SQLitePCLRaw.provider.e_sqlite3.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.1.11.121",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -633,14 +761,14 @@
           "System.ComponentModel": "4.3.0"
         }
       },
-      "System.Configuration.ConfigurationManager/4.4.0": {
+      "System.Configuration.ConfigurationManager/4.4.1": {
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "4.4.0"
         },
         "runtime": {
           "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25519.3"
+            "fileVersion": "4.6.25921.2"
           }
         }
       },
@@ -679,22 +807,6 @@
         }
       },
       "System.Linq.Queryable/4.3.0": {},
-      "System.Net.Http.WinHttpHandler/4.4.0": {
-        "runtime": {
-          "lib/netstandard2.0/System.Net.Http.WinHttpHandler.dll": {
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.25519.3"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard2.0/System.Net.Http.WinHttpHandler.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.25519.3"
-          }
-        }
-      },
       "System.Net.NameResolution/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
@@ -749,14 +861,15 @@
           }
         }
       },
-      "System.Net.Security/4.3.1": {
+      "System.Net.Security/4.3.2": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0",
           "Microsoft.Win32.Primitives": "4.3.0",
           "System.Security.Claims": "4.3.0",
           "System.Security.Principal": "4.3.0",
           "System.Threading.ThreadPool": "4.3.0",
-          "runtime.native.System.Net.Security": "4.3.0"
+          "runtime.native.System.Net.Security": "4.3.0",
+          "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.2"
         },
         "runtimeTargets": {
           "runtime/unix/lib/_._": {
@@ -801,32 +914,33 @@
       },
       "System.Private.DataContractSerialization/4.3.0": {
         "dependencies": {
+          "System.Reflection.TypeExtensions": "4.5.0",
           "System.Runtime.Serialization.Primitives": "4.3.0",
           "System.Xml.XmlSerializer": "4.3.0"
         }
       },
-      "System.Private.ServiceModel/4.4.0": {
+      "System.Private.ServiceModel/4.5.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0",
-          "System.Net.Http.WinHttpHandler": "4.4.0",
-          "System.Reflection.DispatchProxy": "4.4.0"
+          "System.Reflection.DispatchProxy": "4.5.0"
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard2.0/System.Private.ServiceModel.dll": {
             "rid": "unix",
             "assetType": "runtime",
-            "assemblyVersion": "4.1.2.0",
-            "fileVersion": "4.6.25525.6"
+            "assemblyVersion": "4.5.0.3",
+            "fileVersion": "4.6.26720.1"
           },
-          "runtimes/win7/lib/netstandard2.0/System.Private.ServiceModel.dll": {
-            "rid": "win7",
+          "runtimes/win/lib/netstandard2.0/System.Private.ServiceModel.dll": {
+            "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "4.1.2.0",
-            "fileVersion": "4.6.25525.6"
+            "assemblyVersion": "4.5.0.3",
+            "fileVersion": "4.6.26720.1"
           }
         }
       },
-      "System.Reflection.DispatchProxy/4.4.0": {},
+      "System.Reflection.DispatchProxy/4.5.0": {},
+      "System.Reflection.TypeExtensions/4.5.0": {},
       "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
         "runtimeTargets": {
           "runtime/unix/lib/_._": {
@@ -873,14 +987,18 @@
         }
       },
       "System.Security.Principal/4.3.0": {},
-      "System.ServiceModel.Primitives/4.4.0": {
+      "System.ServiceModel.Primitives/4.5.3": {
         "dependencies": {
-          "System.Private.ServiceModel": "4.4.0"
+          "System.Private.ServiceModel": "4.5.3"
         },
         "runtime": {
           "lib/netstandard2.0/System.ServiceModel.Primitives.dll": {
-            "assemblyVersion": "4.2.0.0",
-            "fileVersion": "4.6.25525.6"
+            "assemblyVersion": "4.5.0.3",
+            "fileVersion": "4.6.26720.1"
+          },
+          "lib/netstandard2.0/System.ServiceModel.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26720.1"
           }
         }
       },
@@ -901,7 +1019,11 @@
       },
       "System.Threading.ThreadPool/4.3.0": {},
       "System.ValueTuple/4.5.0": {},
-      "System.Xml.XmlSerializer/4.3.0": {},
+      "System.Xml.XmlSerializer/4.3.0": {
+        "dependencies": {
+          "System.Reflection.TypeExtensions": "4.5.0"
+        }
+      },
       "WindowsAzure.Storage/9.3.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3"
@@ -921,33 +1043,33 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AWSSDK.Core/3.3.22": {
+    "AWSSDK.Core/3.3.24.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aor3fY0UwlJmffaI5BoysNEkDEMdokP/yn2hgJTyjENMO44OFW821g9vgIKrRhcUR2ulCpAI3mtsUUpqmF1Wnw==",
-      "path": "awssdk.core/3.3.22",
-      "hashPath": "awssdk.core.3.3.22.nupkg.sha512"
+      "sha512": "sha512-9skBaUTuglb/Wc8XJU1CxFQFT2edPxE2Hn11lkkFNstmc2S1chlCLFVFGMfsanZXnlEMFEsSygu55Jgwi4mWAA==",
+      "path": "awssdk.core/3.3.24.8",
+      "hashPath": "awssdk.core.3.3.24.8.nupkg.sha512"
     },
-    "AWSSDK.DynamoDBv2/3.3.7.2": {
+    "AWSSDK.DynamoDBv2/3.3.12.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-A5AX4dgC23MjoEECttSxkJrMDWNB+/Kw4FfzHfJqgYCCu2LESmPh9gSAO/6h172llGpklW+7Tt7bWFcoJipmTA==",
-      "path": "awssdk.dynamodbv2/3.3.7.2",
-      "hashPath": "awssdk.dynamodbv2.3.3.7.2.nupkg.sha512"
+      "sha512": "sha512-1/nrmOldCTLXgPvQ+OrxLmJul3gq5dv8iFKuWqfIg0dRZVM2OsFy4M+X23t9S2mIqZSlSibIR9n4irD1sRq9vg==",
+      "path": "awssdk.dynamodbv2/3.3.12.2",
+      "hashPath": "awssdk.dynamodbv2.3.3.12.2.nupkg.sha512"
     },
-    "AWSSDK.S3/3.3.18.1": {
+    "AWSSDK.S3/3.3.20.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-INZyF6pb8NTSK9Am3LOSwjUd68mn23oGejeN4LZA/SSCzIl2N/7OcsDnUnsXS+Opu6Ho2rrshkP1mxVRzQDtuw==",
-      "path": "awssdk.s3/3.3.18.1",
-      "hashPath": "awssdk.s3.3.3.18.1.nupkg.sha512"
+      "sha512": "sha512-5iRvS+dgIBe7Jj7Vgg4tSus1Tw4hm51kC5hjet07g6oq2e0ewKmC/niinwrCHPawy3rWqAvwCVXEHz867YL8iQ==",
+      "path": "awssdk.s3/3.3.20.4",
+      "hashPath": "awssdk.s3.3.3.20.4.nupkg.sha512"
     },
-    "AWSSDK.SQS/3.3.3.6": {
+    "AWSSDK.SQS/3.3.3.16": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BBziVsZoh8Tjut3MFbHwlnjR0lGrTXkKbG4AQKFLW7Q3xKXciy95s6JEran3yr4rClN+eWZ9AFiiNpTeFCX0ZA==",
-      "path": "awssdk.sqs/3.3.3.6",
-      "hashPath": "awssdk.sqs.3.3.3.6.nupkg.sha512"
+      "sha512": "sha512-FksQUq8QzdgqINSm6I0HE63SzBBSitnIYN7LgocpTXYEUVCDKSyRICIuFOLkAZ9laKfAJbRQqvsd2Astj31VAg==",
+      "path": "awssdk.sqs/3.3.3.16",
+      "hashPath": "awssdk.sqs.3.3.3.16.nupkg.sha512"
     },
     "Google.Protobuf/3.5.1": {
       "type": "package",
@@ -991,19 +1113,19 @@
       "path": "microsoft.azure.services.appauthentication/1.0.1",
       "hashPath": "microsoft.azure.services.appauthentication.1.0.1.nupkg.sha512"
     },
-    "Microsoft.Data.Sqlite/2.0.1": {
+    "Microsoft.Data.Sqlite/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jJXCZniFDwHGnRYd9WD3vswQCyIXk0/gsne9TLFWIpy6oK4kAcKD1BTncaHQmVg0pp/YmRBKXVIh4yXSHqbsGQ==",
-      "path": "microsoft.data.sqlite/2.0.1",
-      "hashPath": "microsoft.data.sqlite.2.0.1.nupkg.sha512"
+      "sha512": "sha512-0gM/OsHZgICnN7+Qld69S6LON3vTO2MHFAvm3Ji77Tv+sbJL0tIPx7mdvgH0MJ72bslWnm2Y6Su3jYAv52Q0SA==",
+      "path": "microsoft.data.sqlite/2.1.0",
+      "hashPath": "microsoft.data.sqlite.2.1.0.nupkg.sha512"
     },
-    "Microsoft.Data.Sqlite.Core/2.0.1": {
+    "Microsoft.Data.Sqlite.Core/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lkUOJRJEXnXAxWKhCSFjYKLhuopw+m6ClML4cF1Rt/Ek8bBUW6hn1xAHCZ9KFqkcNOpBS7rQ6nZBaSXU3mgbOQ==",
-      "path": "microsoft.data.sqlite.core/2.0.1",
-      "hashPath": "microsoft.data.sqlite.core.2.0.1.nupkg.sha512"
+      "sha512": "sha512-OzFBXsbsjkNLqClNyBA8ldv3oLYK37JxP2c83xVe7UcxU2KvvqQy+VvQg97rEcMsZPgS4t3pTAv4W7xwaoYuug==",
+      "path": "microsoft.data.sqlite.core/2.1.0",
+      "hashPath": "microsoft.data.sqlite.core.2.1.0.nupkg.sha512"
     },
     "Microsoft.IdentityModel.Clients.ActiveDirectory/3.17.2": {
       "type": "package",
@@ -1089,12 +1211,12 @@
       "path": "microsoft.win32.primitives/4.3.0",
       "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
     },
-    "MySql.Data/8.0.11": {
+    "MySql.Data/8.0.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-P5zKcnM2SVtdHD6gfReymJguIYLhNL5Og8Qm5TC9MEsSupsAYrRu4AB4nsbalrjqqv8VHBqVREWsXg9lY+q03A==",
-      "path": "mysql.data/8.0.11",
-      "hashPath": "mysql.data.8.0.11.nupkg.sha512"
+      "sha512": "sha512-I2jGfuyeomrGJ+N9O+vuV2ucyeayf/tMFREKPdjUcs1/wUF0t+WgUnnzJmJl4sNePNR1fEvAGaGbVAo4uLSF2A==",
+      "path": "mysql.data/8.0.12",
+      "hashPath": "mysql.data.8.0.12.nupkg.sha512"
     },
     "NETStandard.Library/2.0.3": {
       "type": "package",
@@ -1103,12 +1225,33 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "Npgsql/4.0.1": {
+    "Npgsql/4.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-stZuAI50q6fTdGSL+sULvyJYwReFanYuIwARIDHZsjgYOz0e1DaYeqYudOB9e+UDstpoJbhBdbfZ705cCRvxAA==",
-      "path": "npgsql/4.0.1",
-      "hashPath": "npgsql.4.0.1.nupkg.sha512"
+      "sha512": "sha512-sPpinYdH+Jdq9iLFllElQ+J/h3jAnefyUxgBlwc4yz9eBezSYhj64T/u9OlX4cJRXglT3LBkwsFFY78HH4wokw==",
+      "path": "npgsql/4.0.2",
+      "hashPath": "npgsql.4.0.2.nupkg.sha512"
+    },
+    "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7VSGO0URRKoMEAq0Sc9cRz8mb6zbyx/BZDEWhgPdzzpmFhkam3fJ1DAGWFXBI4nGlma+uPKpfuMQP5LXRnOH5g==",
+      "path": "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
+      "hashPath": "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
+    },
+    "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0oAaTAm6e2oVH+/Zttt0cuhGaePQYKII1dY8iaqP7CvOpVKgLybKRFvQjXR2LtxXOXTVPNv14j0ot8uV+HrUmw==",
+      "path": "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
+      "hashPath": "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
+    },
+    "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G24ibsCNi5Kbz0oXWynBoRgtGvsw5ZSVEWjv13/KiCAM8C6wz9zzcCniMeQFIkJ2tasjo2kXlvlBZhplL51kGg==",
+      "path": "runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
+      "hashPath": "runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
     },
     "runtime.native.System.Net.Security/4.3.0": {
       "type": "package",
@@ -1117,187 +1260,243 @@
       "path": "runtime.native.system.net.security/4.3.0",
       "hashPath": "runtime.native.system.net.security.4.3.0.nupkg.sha512"
     },
+    "runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QR1OwtwehHxSeQvZKXe+iSd+d3XZNkEcuWMFYa2i0aG1l+lR739HPicKMlTbJst3spmeekDVBUS7SeS26s4U/g==",
+      "path": "runtime.native.system.security.cryptography.openssl/4.3.2",
+      "hashPath": "runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
+    },
+    "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I+GNKGg2xCHueRd1m9PzeEW7WLbNNLznmTuEi8/vZX71HudUbx1UTwlGkiwMri7JLl8hGaIAWnA/GONhu+LOyQ==",
+      "path": "runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
+      "hashPath": "runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
+    },
+    "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1Z3TAq1ytS1IBRtPXJvEUZdVsfWfeNEhBkbiOCGEl9wwAfsjP2lz3ZFDx5tq8p60/EqbS0HItG5piHuB71RjoA==",
+      "path": "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
+      "hashPath": "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
+    },
+    "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mU/cVmmHtQiDXhnzUImxIcDL48GbTk+TsptXyJA+MIOG9LRjPoAQC/qBFB7X+UNyK86bmvGwC8t+M66wsYC8w==",
+      "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
+      "hashPath": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
+    },
+    "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vjwG0GGcTW/PPg6KVud8F9GLWYuAV1rrw1BKAqY0oh4jcUqg15oYF1+qkGR2x2ZHM4DQnWKQ7cJgYbfncz/lYg==",
+      "path": "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
+      "hashPath": "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
+    },
+    "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7KMFpTkHC/zoExs+PwP8jDCWcrK9H6L7soowT80CUx3e+nxP/AFnq0AQAW5W76z2WYbLAYCRyPfwYFG6zkvQRw==",
+      "path": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
+      "hashPath": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
+    },
+    "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xrlmRCnKZJLHxyyLIqkZjNXqgxnKdZxfItrPkjI+6pkRo5lHX8YvSZlWrSI5AVwLMi4HbNWP7064hcAWeZKp5w==",
+      "path": "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
+      "hashPath": "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
+    },
+    "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-leXiwfiIkW7Gmn7cgnNcdtNAU70SjmKW3jxGj1iKHOvdn0zRWsgv/l2OJUO5zdGdiv2VRFnAsxxhDgMzofPdWg==",
+      "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
+      "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
+    },
     "ServiceStack/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-obVXgPimKZu+7ZA+0xrFONT4htX+WZP3Bf0siaufejtsgTZrcrNdNjwM8MnX7D1johdNjf69FU0iFMXotVRBPA==",
+      "sha512": "sha512-K2Pnz6aoXhHEkzJjTc4UjLqM72DKNF+G+nV69WBegQb57uSPZkO9Pq0n+vbp0X/sLiFUCmWiS/8OKlfP+Q8/pg==",
       "path": "servicestack/5.1.1",
       "hashPath": "servicestack.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Api.OpenApi/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jid9UiV0AAM6e5fV4sJaEBSDJIQfy5XKDFpKlmVL6PIl1I0ZLeWvjf3V476MIN2M8w87lDyxyoYGoO9eVwc95g==",
+      "sha512": "sha512-OR3NmEs+1zP+vfKiQaKQwsw5Qotb9a+9avhMLQtILfJusSjPZC5sk6Tvuaux6rvPD5WmpW/JFXdO9cfUQdcwxQ==",
       "path": "servicestack.api.openapi/5.1.1",
       "hashPath": "servicestack.api.openapi.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Aws/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uWY9S4F/IvpEmAG9CYDaoy9i2+2lviArluPihIO8R7daxacnhPnk8HiC8QurlTnUrcu/fUyx/ZAuDuqx6R1L7A==",
+      "sha512": "sha512-D//VxOeutRShffTvp4HuqnevUjPK0tLisIRN4USAlLQvJYnUMS8GvCs7D1hKMOowYH6A1veehTwHxsbAAFMojw==",
       "path": "servicestack.aws/5.1.1",
       "hashPath": "servicestack.aws.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Azure/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5/hAacyA731qc9jzNSF+jtddyG/YIis7SurA7OefGe5U/Kt3b0ZMGwMa7MEPImO8fhBUlk6+9UImiUMJMJ/i+A==",
+      "sha512": "sha512-n3Ph4bzr3J6cHRfgYaE27kPwq72QAK+n18PL+SVtqSsiMkcGIsUHZHHzUTvzjBhtmSq9TuB3JJK6Xx1cxgcYSA==",
       "path": "servicestack.azure/5.1.1",
       "hashPath": "servicestack.azure.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Client/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EF1Sdz95nznTlolGAiJPCncNDwwrt+hp2IDIOhUtru0F0LirYLunK4NDvcjnMEuv2td7KtAli4qmYo7/yU9F5w==",
+      "sha512": "sha512-lxQeBg4C4Zmd0LugyQlJl6bv8DfYLLv9Gey02MIDYqITHFMTSPqonnJvZXcD6T2NiGY5RjOMgGLulOan6k70Ew==",
       "path": "servicestack.client/5.1.1",
       "hashPath": "servicestack.client.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Client.Core/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mXD1MwHruB9qqpnVkOen/MQWhYIjlx7AksEc+qdxr04L9FZT09CAR6oEe0fTcgLSHp4T0lUCj5PSww+g+sYDRA==",
+      "sha512": "sha512-RDJ6RYrqOyeUSeM12OExpBXrdmixNW933Es3gLgTI2bSnaFGBfYeON3G9ATRLSuiv35ro7m21spKLSxT83OF3g==",
       "path": "servicestack.client.core/5.1.1",
       "hashPath": "servicestack.client.core.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Common/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-O3T6MulKKBXn3AOxOacrIXYbYstGhoPPPmClUy2mDztTtc9oqqnBiyBUS63W/6nlLBmeG7n+r3Xu/TdzFn3SEA==",
+      "sha512": "sha512-pFIlx7GGAHDghMymhZoShbKQYxZToIHT/LDTatLyvVBGU+gtuwmKn7nD5oNhJiVXMO4hoISN4Uy776JO/tZ55w==",
       "path": "servicestack.common/5.1.1",
       "hashPath": "servicestack.common.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Common.Core/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-eVKA7lDC/A7tSyWw+WhOWUQDSb3E8tQFK3LanN7xww8nqgVxCA9PtluPuCWokIe6xqKIb3s6O61gY/n49kFgxQ==",
+      "sha512": "sha512-Cdm0uYpLZ4vH+NcWhUGI383gUzSNeEHl8zMsupsLvhm6OsDvgZ/Z7q9bgyVFn44tYAM0vYrV3GZz02MOIjDEwg==",
       "path": "servicestack.common.core/5.1.1",
       "hashPath": "servicestack.common.core.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Core/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FgPeYnGO8sJFW/nIGm7jh4qBEXMtwNstI3u5PwA9+mONj1yKrdiaBbMXqdX+/WruO7GCq1iMwG/uyN71ErBIhw==",
+      "sha512": "sha512-2KJP5z9/fjDWfHDCb/T6fAmun3FGLZPR2JLcoe0AdG0/189eqwRnJE61XrrJstsdQCHqgEzBhTbHDV9Ri4J+/Q==",
       "path": "servicestack.core/5.1.1",
       "hashPath": "servicestack.core.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Interfaces/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-urorTSBin1VG/DzHnNLvkzsGzZYWhu/I++SpblOznlFMcEearjc46CkPYPKAOtxYJlYupdUUkydPUl8MWqwckg==",
+      "sha512": "sha512-n7OdE2Z9M+5OKh5aHTq1t7hAQ7H86z+JsLEqPO0wB8CXwTiLVijUCElqz8GGCKQ41E3xX2FpBbpVc88+iavO3g==",
       "path": "servicestack.interfaces/5.1.1",
       "hashPath": "servicestack.interfaces.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Interfaces.Core/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-skE6Xc7lj4QE8mNZl8hZ9J0L4slbcVeAnbqUccYlro2e1p7yPFYIVlPnBn3yLrTk6pctqJSU7A4r5oM0Yc6FFA==",
+      "sha512": "sha512-6WIfW54gjR76B1afGgYjs5Nkobgwb8YoIeWcQWMcnYlje37GpIxCf3LZLBSR5zq3UvhQY0++ckUQlrxGsXNyjw==",
       "path": "servicestack.interfaces.core/5.1.1",
       "hashPath": "servicestack.interfaces.core.5.1.1.nupkg.sha512"
     },
     "ServiceStack.OrmLite/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6C5XoA+F4qi7krLmIh1cit/dEtr+8qcZzWyVg4JndwuHU5jcfk1UCkn2/yMxTfp/ZsaQhLwiGdJ3GyitmKK4OA==",
+      "sha512": "sha512-RQ5h2ry5QBBU+Hg0ouVgJap5MrQGWkgxwiwTANkP/Le9+0JBPMrc1l0tZWSbhBlYrNy6Yfnes4z1aoGm5/D5Cw==",
       "path": "servicestack.ormlite/5.1.1",
       "hashPath": "servicestack.ormlite.5.1.1.nupkg.sha512"
     },
     "ServiceStack.OrmLite.MySql/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FzZkxbdeqqQM3CTOAUNvGFD89tACGmT4Zw7z1KmlyIdXlpvMDzxSciA8Qqg9mH0VczBQRcEbVYgYwPgHDDiLaQ==",
+      "sha512": "sha512-JmTSrQ8EqjUFpO5EoUvLW5QuKHHknsssI2MO5ir3m4Uw87wfEge3WY7l32pbFX4j+pIRthYQvCLmhYNfs8Zi2A==",
       "path": "servicestack.ormlite.mysql/5.1.1",
       "hashPath": "servicestack.ormlite.mysql.5.1.1.nupkg.sha512"
     },
     "ServiceStack.OrmLite.PostgreSQL/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jWNQQVLbyDZvWdFuG1WxtMMhQHuRVzAjSQUkWEtPSEqFsHvrCHwvS/j+wYdcr6+JNOJSKCWBvzA1EiHj+dtOkA==",
+      "sha512": "sha512-rRZxD8ly8zkZCTIWPan4XIwjjRyJ+aDn18+fTqrAcg5lv92AUMRWKvNcY+0lxM+9ewIpeFKNT064YifatR+lcA==",
       "path": "servicestack.ormlite.postgresql/5.1.1",
       "hashPath": "servicestack.ormlite.postgresql.5.1.1.nupkg.sha512"
     },
     "ServiceStack.OrmLite.Sqlite/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qTbHFhHlYuNh9jnKs01BDPy7DfiHayJ8G/TfDXTn/A6TACTqHBXWjBdQPe0JFGuw+Haz7o1hY3svyCuMjjtBkg==",
+      "sha512": "sha512-3zpKlNT3juRuNMBMHTRM5wBJXE71aQmTS0chV8vgNlMTt7dOSM6vdP/MzDorLeoRev4TWGklYDw1NQk/vWJd6Q==",
       "path": "servicestack.ormlite.sqlite/5.1.1",
       "hashPath": "servicestack.ormlite.sqlite.5.1.1.nupkg.sha512"
     },
     "ServiceStack.OrmLite.SqlServer/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lZ4Ul6Gh7vesyJd3l+UaiZ9lyiT+rK7SOLsHQH8Juq9Yiu+olviu7p0pRWdxOlt0W0Fkm3P2R8ivJX1vAs80zA==",
+      "sha512": "sha512-RE+NpOOwM6opppNv74gFw9/0cXtl2hYSx+ulAAzSkwBx7jAoKV4w+jTEgRE5ci1gwpXpcpuw+qke+jFsxjoHUg==",
       "path": "servicestack.ormlite.sqlserver/5.1.1",
       "hashPath": "servicestack.ormlite.sqlserver.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Redis/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IhIff342yYt85GneRNLycaHtcQyfI9i8yLjBEHoCvhDpaRV1eQxhQGvzv0vORWbgPo9fe6U0ek0DSYrQ9MQ88Q==",
+      "sha512": "sha512-FaRWqIRkRaQEX4ANgeXxDYDKjBzwEdpXzob2sll7xeI+2dA7yO+160oPBdgIiUS2X7YrF10Ce+P2OiNQPPSH9g==",
       "path": "servicestack.redis/5.1.1",
       "hashPath": "servicestack.redis.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Server/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-0UlnoCYaG0lZSH1YwcwQ1z2qMTEpkdAiUYdvkZmHtQ5aoMUkRdyyEhPP6fl5VvKLmIv4CCnN6dJfPC1FS3luKA==",
+      "sha512": "sha512-ev9UMI6jKIAeKKC9lH2Q5M6wRw17uyQAUz8ocgMFUKA6XxsiwoNBjdP7ORnsJWjhLuLRny6UgJ76kXgO4iPhnw==",
       "path": "servicestack.server/5.1.1",
       "hashPath": "servicestack.server.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Text/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Fnen1gM2cMdoH88yfDQjIRO/GXxabk/wRtsgT0sbp2NmkQU/ctqb5J1wybkelG05k2Gk3VTPaA3OWcumwbl1Bw==",
+      "sha512": "sha512-sKA1UB1cax5f1z6nEYkbAtRCKtXpBXYS74NCDhEzOxAJqFtzOyy7zFdiHrbMuLyEqfE86NkdZp6dvnFmqcx3bw==",
       "path": "servicestack.text/5.1.1",
       "hashPath": "servicestack.text.5.1.1.nupkg.sha512"
     },
     "ServiceStack.Text.Core/5.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NBThCAMLOfP4KLA61qbzwgpKvoXcP/+zzCy5IBFP4gTdm26tfAIuCCumO8tjfNTXFgKGmUpzTd1o8F+unlbdZA==",
+      "sha512": "sha512-KcsHenR4EJN4afYjmQaYmhWZddtVVEss70evy6TxqbYgfGR8O4QLiloru12J0xNEsT6YPk664lMpIN7UyEq2Iw==",
       "path": "servicestack.text.core/5.1.1",
       "hashPath": "servicestack.text.core.5.1.1.nupkg.sha512"
     },
-    "SQLitePCLRaw.bundle_green/1.1.7": {
+    "SQLitePCLRaw.bundle_green/1.1.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Kw+n4CUhQ8S4YAPmpRUldO8S7c4LU7HHukJF0v5Sfggf8Ia9YVdIh0dYkMvKvS+DTX+OBORSMqPM0CGfAzFtVA==",
-      "path": "sqlitepclraw.bundle_green/1.1.7",
-      "hashPath": "sqlitepclraw.bundle_green.1.1.7.nupkg.sha512"
+      "sha512": "sha512-Hqp8IF/RLjbypkLm+t+1RqAX8EKuWEkj7wkLXplfENQoPnE127cvTmaDvaQKtt7a5QsD/HNjFDr1z5f9q2wdPg==",
+      "path": "sqlitepclraw.bundle_green/1.1.11",
+      "hashPath": "sqlitepclraw.bundle_green.1.1.11.nupkg.sha512"
     },
-    "SQLitePCLRaw.core/1.1.7": {
+    "SQLitePCLRaw.core/1.1.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-u9k9ZFkyTU6CVyXWpRuuXOvKi/cy/xt1oGKVSW8aUKcTL4RdH34yFNtVykEeiR68ojIEvmoZfL51h/xx2IQk5g==",
-      "path": "sqlitepclraw.core/1.1.7",
-      "hashPath": "sqlitepclraw.core.1.1.7.nupkg.sha512"
+      "sha512": "sha512-QT17CyQAQIbTCu6pW5+uVA8BXqRzquiDI1tr5Un6c1YZcQydPmGPuYYng9xMs2UHUDYHbTu+JDkp55WR+qo9bQ==",
+      "path": "sqlitepclraw.core/1.1.11",
+      "hashPath": "sqlitepclraw.core.1.1.11.nupkg.sha512"
     },
-    "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.7": {
+    "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KRqMd1qLwJ4pzPybj8q95s+wV6jby5F0O/rp0vw3wa2Z2wHxRm0VqxS2Sejlr7Ctz+LxSr8DpNg1l1u6n/PAPA==",
-      "path": "sqlitepclraw.lib.e_sqlite3.linux/1.1.7",
-      "hashPath": "sqlitepclraw.lib.e_sqlite3.linux.1.1.7.nupkg.sha512"
+      "sha512": "sha512-yt79OujiYBueEUdhTQI+fIdmRpFEGcaMLziSCfhG2dsAERDvCQ+FB5tQgZBdFkB2kmVl0llskzBtwSbg3WEIdQ==",
+      "path": "sqlitepclraw.lib.e_sqlite3.linux/1.1.11",
+      "hashPath": "sqlitepclraw.lib.e_sqlite3.linux.1.1.11.nupkg.sha512"
     },
-    "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.7": {
+    "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hdZx1DKHbDi4li6abmJ+A29mxY8D6BcM0s8VMT8p4MWEyrj54CZFUm402jTV6OgZCsFGkbRFnuFdBXf4vSDO7g==",
-      "path": "sqlitepclraw.lib.e_sqlite3.osx/1.1.7",
-      "hashPath": "sqlitepclraw.lib.e_sqlite3.osx.1.1.7.nupkg.sha512"
+      "sha512": "sha512-o6rxxAFS5Hya6AXCA/eU+1QqwpGVHJBaJjIG+Mui3kIqcV6d+qz0zi46i1QNK6TAel8Sj4QlXO85wNPN70BMEg==",
+      "path": "sqlitepclraw.lib.e_sqlite3.osx/1.1.11",
+      "hashPath": "sqlitepclraw.lib.e_sqlite3.osx.1.1.11.nupkg.sha512"
     },
-    "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.7": {
+    "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-roIdTH4a4iFa08HOwTWnzj2QYBIpSZRYfLSvHjtbH67I4DSWregrd4jkSnoOuwC5GHG08FNahBfEx3HAsVqW+g==",
-      "path": "sqlitepclraw.lib.e_sqlite3.v110_xp/1.1.7",
-      "hashPath": "sqlitepclraw.lib.e_sqlite3.v110_xp.1.1.7.nupkg.sha512"
+      "sha512": "sha512-h1Jng85sdFV/IC+Lri+buN1r5Kd0kgh0lh/pc4jlHd3tljZhc2Si2GW1VD0hJc4p/P4oSVa2426hBAi1y6/goA==",
+      "path": "sqlitepclraw.lib.e_sqlite3.v110_xp/1.1.11",
+      "hashPath": "sqlitepclraw.lib.e_sqlite3.v110_xp.1.1.11.nupkg.sha512"
     },
-    "SQLitePCLRaw.provider.e_sqlite3.netstandard11/1.1.7": {
+    "SQLitePCLRaw.provider.e_sqlite3.netstandard11/1.1.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Zdug2wETm6847337EtD8MoCAtOdwM6prEXL/UsJ97Zxvoeyk/gUpdtuFNBxgJzceuty0jymjxm5yur5QajdApg==",
-      "path": "sqlitepclraw.provider.e_sqlite3.netstandard11/1.1.7",
-      "hashPath": "sqlitepclraw.provider.e_sqlite3.netstandard11.1.1.7.nupkg.sha512"
+      "sha512": "sha512-6q2qXc7GA11ZFh3ATFj9LjzF0HfMtlN1hDi8QATSoML4sR+inquXdionvyX8nUegutOAGXjKDp+8MziaUV5Pkg==",
+      "path": "sqlitepclraw.provider.e_sqlite3.netstandard11/1.1.11",
+      "hashPath": "sqlitepclraw.provider.e_sqlite3.netstandard11.1.1.11.nupkg.sha512"
     },
     "System.ComponentModel/4.3.0": {
       "type": "package",
@@ -1313,12 +1512,12 @@
       "path": "system.componentmodel.primitives/4.3.0",
       "hashPath": "system.componentmodel.primitives.4.3.0.nupkg.sha512"
     },
-    "System.Configuration.ConfigurationManager/4.4.0": {
+    "System.Configuration.ConfigurationManager/4.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gWwQv/Ug1qWJmHCmN17nAbxJYmQBM/E94QxKLksvUiiKB1Ld3Sc/eK1lgmbSjDFxkQhVuayI/cGFZhpBSodLrg==",
-      "path": "system.configuration.configurationmanager/4.4.0",
-      "hashPath": "system.configuration.configurationmanager.4.4.0.nupkg.sha512"
+      "sha512": "sha512-jz3TWKMAeuDEyrPCK5Jyt4bzQcmzUIMcY9Ud6PkElFxTfnsihV+9N/UCqvxe1z5gc7jMYAnj7V1COMS9QKIuHQ==",
+      "path": "system.configuration.configurationmanager/4.4.1",
+      "hashPath": "system.configuration.configurationmanager.4.4.1.nupkg.sha512"
     },
     "System.Data.Common/4.3.0": {
       "type": "package",
@@ -1348,13 +1547,6 @@
       "path": "system.linq.queryable/4.3.0",
       "hashPath": "system.linq.queryable.4.3.0.nupkg.sha512"
     },
-    "System.Net.Http.WinHttpHandler/4.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ZmsFZIZ4PL2UfUlfj4KCzzAGGE2SF39ENIqtvfgu0bwMEAe3J3CqZr765E2W6eQQtNK08/8DpHcsA0sAKZdEtA==",
-      "path": "system.net.http.winhttphandler/4.4.0",
-      "hashPath": "system.net.http.winhttphandler.4.4.0.nupkg.sha512"
-    },
     "System.Net.NameResolution/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1376,12 +1568,12 @@
       "path": "system.net.requests/4.3.0",
       "hashPath": "system.net.requests.4.3.0.nupkg.sha512"
     },
-    "System.Net.Security/4.3.1": {
+    "System.Net.Security/4.3.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qYnDntmrrHXUAhA+v2Kve8onMjJ2ZryQvx7kjGhW88c0IgA9B+q2M8b3l76HFBeotufDbAJfOvLEP32PS4XIKA==",
-      "path": "system.net.security/4.3.1",
-      "hashPath": "system.net.security.4.3.1.nupkg.sha512"
+      "sha512": "sha512-xT2jbYpbBo3ha87rViHoTA6WdvqOAW37drmqyx/6LD8p7HEPT2qgdxoimRzWtPg8Jh4X5G9BV2seeTv4x6FYlA==",
+      "path": "system.net.security/4.3.2",
+      "hashPath": "system.net.security.4.3.2.nupkg.sha512"
     },
     "System.Net.Sockets/4.3.0": {
       "type": "package",
@@ -1418,19 +1610,26 @@
       "path": "system.private.datacontractserialization/4.3.0",
       "hashPath": "system.private.datacontractserialization.4.3.0.nupkg.sha512"
     },
-    "System.Private.ServiceModel/4.4.0": {
+    "System.Private.ServiceModel/4.5.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lED0s9Lfo2TdniGlFY2rdK1wygFJ7dPRaTHR2Z409nGWfFG1YMuAlrfMhSeYFJ5pbffAlOBxb8hvoYxP3LJ6mg==",
-      "path": "system.private.servicemodel/4.4.0",
-      "hashPath": "system.private.servicemodel.4.4.0.nupkg.sha512"
+      "sha512": "sha512-TRkNLXhUasgpBESQnxbZozE2PxTmvKbkuHqjhqaPa+N0gsvfbWTRqHWg4KvcTFb9Xy1k3n8Y6VX3BRbYhU5Wsg==",
+      "path": "system.private.servicemodel/4.5.3",
+      "hashPath": "system.private.servicemodel.4.5.3.nupkg.sha512"
     },
-    "System.Reflection.DispatchProxy/4.4.0": {
+    "System.Reflection.DispatchProxy/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xK6JE0mpsBD+T0qu3V6dmVRa06PxAvIIM/zSjouqP7Sk6X+FQj+9XFRz9GmZk9aJGMU1LX6AgTZIlsYZ64QKsw==",
-      "path": "system.reflection.dispatchproxy/4.4.0",
-      "hashPath": "system.reflection.dispatchproxy.4.4.0.nupkg.sha512"
+      "sha512": "sha512-2iafuenmPvt9Y+j8nscAVQyj7g4EU55ICNdMIrbF8WN+MbNehiJaunucpFjE1SAdLRclDbm0kqmYatWsiqeCvQ==",
+      "path": "system.reflection.dispatchproxy/4.5.0",
+      "hashPath": "system.reflection.dispatchproxy.4.5.0.nupkg.sha512"
+    },
+    "System.Reflection.TypeExtensions/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jdK7She37kK5gtXbznOVwcfbtCb2vIs8UfMsYd2OFiGLmj+3oXrA3bgUQPzbe3boNJApkA7oLb42nCHQ0g813A==",
+      "path": "system.reflection.typeextensions/4.5.0",
+      "hashPath": "system.reflection.typeextensions.4.5.0.nupkg.sha512"
     },
     "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
       "type": "package",
@@ -1481,12 +1680,12 @@
       "path": "system.security.principal/4.3.0",
       "hashPath": "system.security.principal.4.3.0.nupkg.sha512"
     },
-    "System.ServiceModel.Primitives/4.4.0": {
+    "System.ServiceModel.Primitives/4.5.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6rATyMUeeOPVY7XzoneoyzGKVCc62gGl/A6SKrlY0dX0bnMprIrXZF1AXy9Y8ne49JU/2RGGeldFbATYONc/XQ==",
-      "path": "system.servicemodel.primitives/4.4.0",
-      "hashPath": "system.servicemodel.primitives.4.4.0.nupkg.sha512"
+      "sha512": "sha512-cZp5aMKHubNtuGAQviYXFqskewYBdyWpqT3g8rPAE5awve/kRK6g2uTZnFr4BhrjkT2bu9sR4N6Mx+vsQUtjpg==",
+      "path": "system.servicemodel.primitives/4.5.3",
+      "hashPath": "system.servicemodel.primitives.4.5.3.nupkg.sha512"
     },
     "System.Threading.Overlapped/4.3.0": {
       "type": "package",
