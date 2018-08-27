@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "0cf91c1b78644a4c23805ced741248ad96e45ad4"
+    "signature": "ecfff4b761126d79a834f2c5221d1c9aa701628e"
   },
   "compilationOptions": {},
   "targets": {
@@ -13,21 +13,21 @@
           "Microsoft.NETCore.App": "2.1.0",
           "MySql.Data": "8.0.12",
           "Npgsql": "4.0.2",
-          "ServiceStack": "5.1.1",
-          "ServiceStack.Api.OpenApi": "5.1.1",
-          "ServiceStack.Aws": "5.1.1",
-          "ServiceStack.Azure": "5.1.1",
-          "ServiceStack.Client": "5.1.1",
-          "ServiceStack.Common": "5.1.1",
-          "ServiceStack.Interfaces": "5.1.1",
-          "ServiceStack.OrmLite": "5.1.1",
-          "ServiceStack.OrmLite.MySql": "5.1.1",
-          "ServiceStack.OrmLite.PostgreSQL": "5.1.1",
-          "ServiceStack.OrmLite.SqlServer": "5.1.1",
-          "ServiceStack.OrmLite.Sqlite": "5.1.1",
-          "ServiceStack.Redis": "5.1.1",
-          "ServiceStack.Server": "5.1.1",
-          "ServiceStack.Text": "5.1.1"
+          "ServiceStack": "5.2.0",
+          "ServiceStack.Api.OpenApi": "5.2.0",
+          "ServiceStack.Aws": "5.2.0",
+          "ServiceStack.Azure": "5.2.0",
+          "ServiceStack.Client": "5.2.0",
+          "ServiceStack.Common": "5.2.0",
+          "ServiceStack.Interfaces": "5.2.0",
+          "ServiceStack.OrmLite": "5.2.0",
+          "ServiceStack.OrmLite.MySql": "5.2.0",
+          "ServiceStack.OrmLite.PostgreSQL": "5.2.0",
+          "ServiceStack.OrmLite.SqlServer": "5.2.0",
+          "ServiceStack.OrmLite.Sqlite": "5.2.0",
+          "ServiceStack.Redis": "5.2.0",
+          "ServiceStack.Server": "5.2.0",
+          "ServiceStack.Text": "5.2.0"
         },
         "runtime": {
           "app.dll": {}
@@ -387,22 +387,22 @@
           }
         }
       },
-      "ServiceStack/5.1.1": {
+      "ServiceStack/5.2.0": {
         "dependencies": {
-          "ServiceStack.Client": "5.1.1",
-          "ServiceStack.Common": "5.1.1",
+          "ServiceStack.Client": "5.2.0",
+          "ServiceStack.Common": "5.2.0",
           "System.Linq.Queryable": "4.3.0"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Api.OpenApi/5.1.1": {
+      "ServiceStack.Api.OpenApi/5.2.0": {
         "dependencies": {
-          "ServiceStack": "5.1.1",
+          "ServiceStack": "5.2.0",
           "System.Runtime.Serialization.Primitives": "4.3.0",
           "System.ServiceModel.Primitives": "4.5.3",
           "System.Xml.XmlSerializer": "4.3.0"
@@ -410,44 +410,44 @@
         "runtime": {
           "lib/netstandard2.0/ServiceStack.Api.OpenApi.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Aws/5.1.1": {
+      "ServiceStack.Aws/5.2.0": {
         "dependencies": {
           "AWSSDK.Core": "3.3.24.8",
           "AWSSDK.DynamoDBv2": "3.3.12.2",
           "AWSSDK.S3": "3.3.20.4",
           "AWSSDK.SQS": "3.3.3.16",
-          "ServiceStack": "5.1.1",
+          "ServiceStack": "5.2.0",
           "System.ServiceModel.Primitives": "4.5.3"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.Aws.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Azure/5.1.1": {
+      "ServiceStack.Azure/5.2.0": {
         "dependencies": {
           "Microsoft.Azure.Management.ServiceBus": "1.4.0",
           "Microsoft.Azure.ServiceBus": "3.1.0",
-          "ServiceStack.Core": "5.1.1",
+          "ServiceStack.Core": "5.2.0",
           "WindowsAzure.Storage": "9.3.1"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.Azure.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Client/5.1.1": {
+      "ServiceStack.Client/5.2.0": {
         "dependencies": {
-          "ServiceStack.Interfaces": "5.1.1",
-          "ServiceStack.Text": "5.1.1",
+          "ServiceStack.Interfaces": "5.2.0",
+          "ServiceStack.Text": "5.2.0",
           "System.Net.Requests": "4.3.0",
           "System.ServiceModel.Primitives": "4.5.3",
           "System.Xml.XmlSerializer": "4.3.0"
@@ -455,14 +455,14 @@
         "runtime": {
           "lib/netstandard2.0/ServiceStack.Client.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Client.Core/5.1.1": {
+      "ServiceStack.Client.Core/5.2.0": {
         "dependencies": {
-          "ServiceStack.Interfaces.Core": "5.1.1",
-          "ServiceStack.Text.Core": "5.1.1",
+          "ServiceStack.Interfaces.Core": "5.2.0",
+          "ServiceStack.Text.Core": "5.2.0",
           "System.Net.Requests": "4.3.0",
           "System.ServiceModel.Primitives": "4.5.3",
           "System.Xml.XmlSerializer": "4.3.0"
@@ -470,14 +470,14 @@
         "runtime": {
           "lib/netstandard2.0/ServiceStack.Client.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Common/5.1.1": {
+      "ServiceStack.Common/5.2.0": {
         "dependencies": {
-          "ServiceStack.Interfaces": "5.1.1",
-          "ServiceStack.Text": "5.1.1",
+          "ServiceStack.Interfaces": "5.2.0",
+          "ServiceStack.Text": "5.2.0",
           "System.ComponentModel.Primitives": "4.3.0",
           "System.Data.Common": "4.3.0",
           "System.Net.NetworkInformation": "4.3.0",
@@ -487,14 +487,14 @@
         "runtime": {
           "lib/netstandard2.0/ServiceStack.Common.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Common.Core/5.1.1": {
+      "ServiceStack.Common.Core/5.2.0": {
         "dependencies": {
-          "ServiceStack.Interfaces.Core": "5.1.1",
-          "ServiceStack.Text.Core": "5.1.1",
+          "ServiceStack.Interfaces.Core": "5.2.0",
+          "ServiceStack.Text.Core": "5.2.0",
           "System.ComponentModel.Primitives": "4.3.0",
           "System.Data.Common": "4.3.0",
           "System.Net.NetworkInformation": "4.3.0",
@@ -504,108 +504,108 @@
         "runtime": {
           "lib/netstandard2.0/ServiceStack.Common.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Core/5.1.1": {
+      "ServiceStack.Core/5.2.0": {
         "dependencies": {
-          "ServiceStack.Client.Core": "5.1.1",
-          "ServiceStack.Common.Core": "5.1.1",
+          "ServiceStack.Client.Core": "5.2.0",
+          "ServiceStack.Common.Core": "5.2.0",
           "System.Linq.Queryable": "4.3.0"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Interfaces/5.1.1": {
+      "ServiceStack.Interfaces/5.2.0": {
         "dependencies": {
           "System.Runtime.Serialization.Primitives": "4.3.0"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.Interfaces.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Interfaces.Core/5.1.1": {
+      "ServiceStack.Interfaces.Core/5.2.0": {
         "dependencies": {
           "System.Runtime.Serialization.Primitives": "4.3.0"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.Interfaces.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.OrmLite/5.1.1": {
+      "ServiceStack.OrmLite/5.2.0": {
         "dependencies": {
-          "ServiceStack.Common": "5.1.1",
+          "ServiceStack.Common": "5.2.0",
           "System.ComponentModel.Primitives": "4.3.0",
           "System.Reflection.TypeExtensions": "4.5.0"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.OrmLite.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.OrmLite.MySql/5.1.1": {
+      "ServiceStack.OrmLite.MySql/5.2.0": {
         "dependencies": {
           "MySql.Data": "8.0.12",
-          "ServiceStack.OrmLite": "5.1.1"
+          "ServiceStack.OrmLite": "5.2.0"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.OrmLite.MySql.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.OrmLite.PostgreSQL/5.1.1": {
+      "ServiceStack.OrmLite.PostgreSQL/5.2.0": {
         "dependencies": {
           "Npgsql": "4.0.2",
-          "ServiceStack.OrmLite": "5.1.1"
+          "ServiceStack.OrmLite": "5.2.0"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.OrmLite.PostgreSQL.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.OrmLite.Sqlite/5.1.1": {
+      "ServiceStack.OrmLite.Sqlite/5.2.0": {
         "dependencies": {
           "Microsoft.Data.Sqlite": "2.1.0",
-          "ServiceStack.OrmLite": "5.1.1"
+          "ServiceStack.OrmLite": "5.2.0"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.OrmLite.Sqlite.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.OrmLite.SqlServer/5.1.1": {
+      "ServiceStack.OrmLite.SqlServer/5.2.0": {
         "dependencies": {
-          "ServiceStack.OrmLite": "5.1.1"
+          "ServiceStack.OrmLite": "5.2.0"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.OrmLite.SqlServer.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Redis/5.1.1": {
+      "ServiceStack.Redis/5.2.0": {
         "dependencies": {
-          "ServiceStack.Common": "5.1.1",
+          "ServiceStack.Common": "5.2.0",
           "System.Data.Common": "4.3.0",
           "System.Net.NameResolution": "4.3.0",
           "System.Net.Security": "4.3.2"
@@ -613,36 +613,36 @@
         "runtime": {
           "lib/netstandard2.0/ServiceStack.Redis.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Server/5.1.1": {
+      "ServiceStack.Server/5.2.0": {
         "dependencies": {
-          "ServiceStack": "5.1.1",
-          "ServiceStack.OrmLite": "5.1.1",
-          "ServiceStack.Redis": "5.1.1"
+          "ServiceStack": "5.2.0",
+          "ServiceStack.OrmLite": "5.2.0",
+          "ServiceStack.Redis": "5.2.0"
         },
         "runtime": {
           "lib/netstandard2.0/ServiceStack.Server.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Text/5.1.1": {
+      "ServiceStack.Text/5.2.0": {
         "runtime": {
           "lib/netcoreapp2.1/ServiceStack.Text.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
-      "ServiceStack.Text.Core/5.1.1": {
+      "ServiceStack.Text.Core/5.2.0": {
         "runtime": {
           "lib/netcoreapp2.1/ServiceStack.Text.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "5.2.0.0"
           }
         }
       },
@@ -1316,145 +1316,145 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
     },
-    "ServiceStack/5.1.1": {
+    "ServiceStack/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-K2Pnz6aoXhHEkzJjTc4UjLqM72DKNF+G+nV69WBegQb57uSPZkO9Pq0n+vbp0X/sLiFUCmWiS/8OKlfP+Q8/pg==",
-      "path": "servicestack/5.1.1",
-      "hashPath": "servicestack.5.1.1.nupkg.sha512"
+      "sha512": "sha512-Vcv1l12HsZaFie01OSZHVoKbeq9O3SNZN5X0cEakROkYrSmtSPKTTnD9Wm8jb1n8AT53xG0U807Gx/bk7dVRkg==",
+      "path": "servicestack/5.2.0",
+      "hashPath": "servicestack.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Api.OpenApi/5.1.1": {
+    "ServiceStack.Api.OpenApi/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OR3NmEs+1zP+vfKiQaKQwsw5Qotb9a+9avhMLQtILfJusSjPZC5sk6Tvuaux6rvPD5WmpW/JFXdO9cfUQdcwxQ==",
-      "path": "servicestack.api.openapi/5.1.1",
-      "hashPath": "servicestack.api.openapi.5.1.1.nupkg.sha512"
+      "sha512": "sha512-RexaewyaHNyhPBBykTwGZP8P/yYnef/lvXJirXY7+wbQ+8HOb28WqFeeeDydfNrpNNJbYCUZNSQTHsgnocK5IQ==",
+      "path": "servicestack.api.openapi/5.2.0",
+      "hashPath": "servicestack.api.openapi.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Aws/5.1.1": {
+    "ServiceStack.Aws/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-D//VxOeutRShffTvp4HuqnevUjPK0tLisIRN4USAlLQvJYnUMS8GvCs7D1hKMOowYH6A1veehTwHxsbAAFMojw==",
-      "path": "servicestack.aws/5.1.1",
-      "hashPath": "servicestack.aws.5.1.1.nupkg.sha512"
+      "sha512": "sha512-TzHydKYbK2UvG4GYupnkfOPWTfOU4dAIiONqS9oLarNix53rZJbVDKMDfrFrQThEKlJ6qXUr59tRRKQY+4CckQ==",
+      "path": "servicestack.aws/5.2.0",
+      "hashPath": "servicestack.aws.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Azure/5.1.1": {
+    "ServiceStack.Azure/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-n3Ph4bzr3J6cHRfgYaE27kPwq72QAK+n18PL+SVtqSsiMkcGIsUHZHHzUTvzjBhtmSq9TuB3JJK6Xx1cxgcYSA==",
-      "path": "servicestack.azure/5.1.1",
-      "hashPath": "servicestack.azure.5.1.1.nupkg.sha512"
+      "sha512": "sha512-SkUzZnol92RCaCZTlxWQVMwFlj34N/E1vCbQvpEHAaALgUOBXwCzNLhBj33iMCZfp5yhD5/CyleME8KKcGHlbw==",
+      "path": "servicestack.azure/5.2.0",
+      "hashPath": "servicestack.azure.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Client/5.1.1": {
+    "ServiceStack.Client/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lxQeBg4C4Zmd0LugyQlJl6bv8DfYLLv9Gey02MIDYqITHFMTSPqonnJvZXcD6T2NiGY5RjOMgGLulOan6k70Ew==",
-      "path": "servicestack.client/5.1.1",
-      "hashPath": "servicestack.client.5.1.1.nupkg.sha512"
+      "sha512": "sha512-23Na0ILQH0kcW0cf9WtCQgbGhFnETnTL1jS1u/QlGmj2hi+/Ikne4gW/SJu4el6ajmpPvp3F0IiHXnHMv+DYig==",
+      "path": "servicestack.client/5.2.0",
+      "hashPath": "servicestack.client.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Client.Core/5.1.1": {
+    "ServiceStack.Client.Core/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RDJ6RYrqOyeUSeM12OExpBXrdmixNW933Es3gLgTI2bSnaFGBfYeON3G9ATRLSuiv35ro7m21spKLSxT83OF3g==",
-      "path": "servicestack.client.core/5.1.1",
-      "hashPath": "servicestack.client.core.5.1.1.nupkg.sha512"
+      "sha512": "sha512-0RlKcq/bPxnTiGTvsbYQl3oaFgJzNiv/MZgb4drL8If3Q8OlnmutHu7VUT/uWq+D71d7/COWuoRHQ7yVCwM5eA==",
+      "path": "servicestack.client.core/5.2.0",
+      "hashPath": "servicestack.client.core.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Common/5.1.1": {
+    "ServiceStack.Common/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pFIlx7GGAHDghMymhZoShbKQYxZToIHT/LDTatLyvVBGU+gtuwmKn7nD5oNhJiVXMO4hoISN4Uy776JO/tZ55w==",
-      "path": "servicestack.common/5.1.1",
-      "hashPath": "servicestack.common.5.1.1.nupkg.sha512"
+      "sha512": "sha512-Twu5UY4qSSgI7J4rxgDyof+4Uunp8cPDDyrJHzxa2UHHHovLyi0OpXAYm+jid8L3nH6UJlPV2AeGCYa3XideRw==",
+      "path": "servicestack.common/5.2.0",
+      "hashPath": "servicestack.common.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Common.Core/5.1.1": {
+    "ServiceStack.Common.Core/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Cdm0uYpLZ4vH+NcWhUGI383gUzSNeEHl8zMsupsLvhm6OsDvgZ/Z7q9bgyVFn44tYAM0vYrV3GZz02MOIjDEwg==",
-      "path": "servicestack.common.core/5.1.1",
-      "hashPath": "servicestack.common.core.5.1.1.nupkg.sha512"
+      "sha512": "sha512-iabs6pwJVwauXmbvVIkpBAEamC4Sl15L+Bf04czTtCVFzo0XIEj5OIlrBMFvU34zD6vLlrX08mb48Xt/niJo/w==",
+      "path": "servicestack.common.core/5.2.0",
+      "hashPath": "servicestack.common.core.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Core/5.1.1": {
+    "ServiceStack.Core/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2KJP5z9/fjDWfHDCb/T6fAmun3FGLZPR2JLcoe0AdG0/189eqwRnJE61XrrJstsdQCHqgEzBhTbHDV9Ri4J+/Q==",
-      "path": "servicestack.core/5.1.1",
-      "hashPath": "servicestack.core.5.1.1.nupkg.sha512"
+      "sha512": "sha512-YXKZM0kjTjobiICJqtI7YQbz4QaQVMMeVsW4syYUEVOWezVu/qBXHic+kis2OaIRvO0b4EcJzlIUI2yxNi0h0Q==",
+      "path": "servicestack.core/5.2.0",
+      "hashPath": "servicestack.core.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Interfaces/5.1.1": {
+    "ServiceStack.Interfaces/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-n7OdE2Z9M+5OKh5aHTq1t7hAQ7H86z+JsLEqPO0wB8CXwTiLVijUCElqz8GGCKQ41E3xX2FpBbpVc88+iavO3g==",
-      "path": "servicestack.interfaces/5.1.1",
-      "hashPath": "servicestack.interfaces.5.1.1.nupkg.sha512"
+      "sha512": "sha512-REIR5LSvA3guc5kWgbRNuX9f7WbnGA6Ya8XFpSOITV4Frsnb9Cho+Rgh4838wuhBkD0jaI9maAnvAkK4xeRQoA==",
+      "path": "servicestack.interfaces/5.2.0",
+      "hashPath": "servicestack.interfaces.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Interfaces.Core/5.1.1": {
+    "ServiceStack.Interfaces.Core/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6WIfW54gjR76B1afGgYjs5Nkobgwb8YoIeWcQWMcnYlje37GpIxCf3LZLBSR5zq3UvhQY0++ckUQlrxGsXNyjw==",
-      "path": "servicestack.interfaces.core/5.1.1",
-      "hashPath": "servicestack.interfaces.core.5.1.1.nupkg.sha512"
+      "sha512": "sha512-HP2uKZ0J1pQm+W9g1yDfvtKBftFp0vr7qItK0+z1Qr/pu5ucEFT5DMieArBM/OJZjgaODpHz19FfZaamcSL1Ow==",
+      "path": "servicestack.interfaces.core/5.2.0",
+      "hashPath": "servicestack.interfaces.core.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.OrmLite/5.1.1": {
+    "ServiceStack.OrmLite/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RQ5h2ry5QBBU+Hg0ouVgJap5MrQGWkgxwiwTANkP/Le9+0JBPMrc1l0tZWSbhBlYrNy6Yfnes4z1aoGm5/D5Cw==",
-      "path": "servicestack.ormlite/5.1.1",
-      "hashPath": "servicestack.ormlite.5.1.1.nupkg.sha512"
+      "sha512": "sha512-G6io6wf4GJIQ/y4eIJbNtHzGiFKFjdPpEqSxtds1gt9BD4S00fFt4B0gZ5rD8oxxUDLmkaySpE6J2cOozUBdFw==",
+      "path": "servicestack.ormlite/5.2.0",
+      "hashPath": "servicestack.ormlite.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.OrmLite.MySql/5.1.1": {
+    "ServiceStack.OrmLite.MySql/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JmTSrQ8EqjUFpO5EoUvLW5QuKHHknsssI2MO5ir3m4Uw87wfEge3WY7l32pbFX4j+pIRthYQvCLmhYNfs8Zi2A==",
-      "path": "servicestack.ormlite.mysql/5.1.1",
-      "hashPath": "servicestack.ormlite.mysql.5.1.1.nupkg.sha512"
+      "sha512": "sha512-1nTBiEwexYZjgq8LwzbFurboY4xKGHfYD7BgZPkLWRWYnaKpIFYjGE6mgUba51cKQ5IbheG/fHsrYb8wyrUwVg==",
+      "path": "servicestack.ormlite.mysql/5.2.0",
+      "hashPath": "servicestack.ormlite.mysql.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.OrmLite.PostgreSQL/5.1.1": {
+    "ServiceStack.OrmLite.PostgreSQL/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rRZxD8ly8zkZCTIWPan4XIwjjRyJ+aDn18+fTqrAcg5lv92AUMRWKvNcY+0lxM+9ewIpeFKNT064YifatR+lcA==",
-      "path": "servicestack.ormlite.postgresql/5.1.1",
-      "hashPath": "servicestack.ormlite.postgresql.5.1.1.nupkg.sha512"
+      "sha512": "sha512-fux9mB8V9m3NTV1Euk8cxUVHaxQCHph5vto4y9ORYSFfweLZFRNTECm0F1JOpDSsycda7VpMugodVjBfnSG12A==",
+      "path": "servicestack.ormlite.postgresql/5.2.0",
+      "hashPath": "servicestack.ormlite.postgresql.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.OrmLite.Sqlite/5.1.1": {
+    "ServiceStack.OrmLite.Sqlite/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3zpKlNT3juRuNMBMHTRM5wBJXE71aQmTS0chV8vgNlMTt7dOSM6vdP/MzDorLeoRev4TWGklYDw1NQk/vWJd6Q==",
-      "path": "servicestack.ormlite.sqlite/5.1.1",
-      "hashPath": "servicestack.ormlite.sqlite.5.1.1.nupkg.sha512"
+      "sha512": "sha512-5OIYhoSnvaSjBV3rI8pIK6LIpwKfATsG0zwkqB0vDHoFPdRVRo6c5eD859wp7P7yIcrX1e2D5Bf8gfjUSmQelg==",
+      "path": "servicestack.ormlite.sqlite/5.2.0",
+      "hashPath": "servicestack.ormlite.sqlite.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.OrmLite.SqlServer/5.1.1": {
+    "ServiceStack.OrmLite.SqlServer/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RE+NpOOwM6opppNv74gFw9/0cXtl2hYSx+ulAAzSkwBx7jAoKV4w+jTEgRE5ci1gwpXpcpuw+qke+jFsxjoHUg==",
-      "path": "servicestack.ormlite.sqlserver/5.1.1",
-      "hashPath": "servicestack.ormlite.sqlserver.5.1.1.nupkg.sha512"
+      "sha512": "sha512-CCcEHKKTbEuokX7laG2qCm5f/gIHjz79eTdT1D8N/p3EKgZr5bnt/NdWFhwBqtxE/w6PmK5hZkp863oAv4bRaQ==",
+      "path": "servicestack.ormlite.sqlserver/5.2.0",
+      "hashPath": "servicestack.ormlite.sqlserver.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Redis/5.1.1": {
+    "ServiceStack.Redis/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FaRWqIRkRaQEX4ANgeXxDYDKjBzwEdpXzob2sll7xeI+2dA7yO+160oPBdgIiUS2X7YrF10Ce+P2OiNQPPSH9g==",
-      "path": "servicestack.redis/5.1.1",
-      "hashPath": "servicestack.redis.5.1.1.nupkg.sha512"
+      "sha512": "sha512-h1fiN2k+3sBujOmNKX9D3o4pCSc8zF226Mxosozl5QSUtIt676MpyUDE5PwS+fmHnFz0LQ4O1GS+mctOb14ATw==",
+      "path": "servicestack.redis/5.2.0",
+      "hashPath": "servicestack.redis.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Server/5.1.1": {
+    "ServiceStack.Server/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ev9UMI6jKIAeKKC9lH2Q5M6wRw17uyQAUz8ocgMFUKA6XxsiwoNBjdP7ORnsJWjhLuLRny6UgJ76kXgO4iPhnw==",
-      "path": "servicestack.server/5.1.1",
-      "hashPath": "servicestack.server.5.1.1.nupkg.sha512"
+      "sha512": "sha512-C3XQkN/HqHSFg0Vhk2g0lHg1WnaoJ3aqymB3l2a9PzZBLtnqT40A9ufFH1ud2ICbLjjA2IZaxREeyvmz4L/1vw==",
+      "path": "servicestack.server/5.2.0",
+      "hashPath": "servicestack.server.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Text/5.1.1": {
+    "ServiceStack.Text/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sKA1UB1cax5f1z6nEYkbAtRCKtXpBXYS74NCDhEzOxAJqFtzOyy7zFdiHrbMuLyEqfE86NkdZp6dvnFmqcx3bw==",
-      "path": "servicestack.text/5.1.1",
-      "hashPath": "servicestack.text.5.1.1.nupkg.sha512"
+      "sha512": "sha512-vV34Ci7QlRQnnVptG5T6civKvnkyu48yV6CQMWPKqx/mcLmxgZU1IB/6S3r9gEORmTCpPSaUTrp38k+3R/bSIQ==",
+      "path": "servicestack.text/5.2.0",
+      "hashPath": "servicestack.text.5.2.0.nupkg.sha512"
     },
-    "ServiceStack.Text.Core/5.1.1": {
+    "ServiceStack.Text.Core/5.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KcsHenR4EJN4afYjmQaYmhWZddtVVEss70evy6TxqbYgfGR8O4QLiloru12J0xNEsT6YPk664lMpIN7UyEq2Iw==",
-      "path": "servicestack.text.core/5.1.1",
-      "hashPath": "servicestack.text.core.5.1.1.nupkg.sha512"
+      "sha512": "sha512-sMDnQPbrEnnrerG1bks6ba7HmCY/9UuycTXecZHJ82cbRJ+5kTQEoPJpUiZLfdidYTgLYzxTIj0DsobeUNmGDw==",
+      "path": "servicestack.text.core/5.2.0",
+      "hashPath": "servicestack.text.core.5.2.0.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_green/1.1.11": {
       "type": "package",
