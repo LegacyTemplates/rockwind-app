@@ -2,7 +2,7 @@
 <head>
     <title>Rockstars</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    {{#if debug}}<script>{{ '/js/hot-loader.js' | includeFile }}</script>{{/if}}
 <style>
 body {
     color: #444;
@@ -47,9 +47,7 @@ th:first-child {
 </style>
 </head>
 <body>
-    <i hidden>{{ '/js/hot-fileloader.js' | ifDebugIncludeScript }}</i>
-
-    <a href="https://github.com/NetCoreTemplates/templates-webapp"><img style="z-index:3; position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+    <a href="https://github.com/NetCoreWebApps/Rockwind"><img style="z-index:3; position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
 
     <h2>Rockstars</h2>
     <p>
@@ -79,32 +77,48 @@ th:first-child {
         <tr>
             <th>Customers</th>
             <td><a href="/northwind/customers">/northwind/customers</a></td>
-            <td><a href="https://github.com/NetCoreTemplates/templates-webapp/blob/master/app/northwind/customers.html">/northwind/customers.html</a></td>
+            <td><a href="https://github.com/NetCoreApps/WebApp/blob/master/src/apps/rockwind/northwind/customers.html">/northwind/customers.html</a></td>
         </tr>
         <tr>
             <th>Employees</th>
             <td><a href="/northwind/employees">/northwind/employees</a></td>
-            <td><a href="https://github.com/NetCoreTemplates/templates-webapp/blob/master/app/northwind/employees.html">/northwind/employees.html</a></td>
+            <td><a href="https://github.com/NetCoreApps/WebApp/blob/master/src/apps/rockwind/northwind/employees.html">/northwind/employees.html</a></td>
         </tr>
         <tr>
             <th>Products</th>
             <td><a href="/northwind/products">/northwind/products</a></td>
-            <td><a href="https://github.com/NetCoreTemplates/templates-webapp/blob/master/app/northwind/products.html">/northwind/products.html</a></td>
+            <td><a href="https://github.com/NetCoreApps/WebApp/blob/master/src/apps/rockwind/northwind/products.html">/northwind/products.html</a></td>
         </tr>
         <tr>
             <th>Categories</th>
             <td><a href="/northwind/categories">/northwind/categories</a></td>
-            <td><a href="https://github.com/NetCoreTemplates/templates-webapp/blob/master/app/northwind/categories.html">/northwind/categories.html</a></td>
+            <td><a href="https://github.com/NetCoreApps/WebApp/blob/master/src/apps/rockwind/northwind/categories.html">/northwind/categories.html</a></td>
         </tr>
         <tr>
             <th>Suppliers</th>
             <td><a href="/northwind/suppliers">/northwind/suppliers</a></td>
-            <td><a href="https://github.com/NetCoreTemplates/templates-webapp/blob/master/app/northwind/suppliers.html">/northwind/suppliers.html</a></td>
+            <td><a href="https://github.com/NetCoreApps/WebApp/blob/master/src/apps/rockwind/northwind/suppliers.html">/northwind/suppliers.html</a></td>
         </tr>
         <tr>
             <th>Shipppers</th>
             <td><a href="/northwind/shippers">/northwind/shippers</a></td>
-            <td><a href="https://github.com/NetCoreTemplates/templates-webapp/blob/master/app/northwind/shippers.html">/northwind/shippers.html</a></td>
+            <td><a href="https://github.com/NetCoreApps/WebApp/blob/master/src/apps/rockwind/northwind/shippers.html">/northwind/shippers.html</a></td>
+        </tr>
+        <tr>
+            <td class="bg-primary" colspan="3" style="text-align:center;color:#fff;font-size:1.5rem">Use Cases</td>
+        </tr>
+        <tr>
+            <th>Order Report #10643</th>
+            <td><a href="/northwind/order-report/10643">/northwind/order-report/10643</a></td>
+            <td><a href="https://github.com/NetCoreWebApps/WebApp/blob/master/src/apps/rockwind/northwind/order-report/_id.html">/northwind/order-report/_id.html</a></td>
+        </tr>
+        <tr>
+            <th>Northwind SQL Viewer</th>
+            <td><a href="/northwind/sql/">/northwind/sql/</a></td>
+            <td>
+                <div><a href="https://github.com/NetCoreWebApps/WebApp/blob/master/src/apps/rockwind/northwind/sql/index.html">/northwind/sql/index.html</a></div>
+                <div><a href="https://github.com/NetCoreWebApps/WebApp/blob/master/src/apps/rockwind/northwind/sql/api.html">/northwind/sql/api.html</a></div>
+            </td>
         </tr>
         <tr>
             <td class="bg-primary" colspan="3" style="text-align:center;color:#fff;font-size:1.5rem">Page Queries</td>
@@ -112,7 +126,7 @@ th:first-child {
         <tr>
             <th>Customers in Germany</th>
             <td><a href="/northwind/customers?country=Germany">/northwind/customers?country=Germany</a></td>
-            <td><a href="https://github.com/NetCoreTemplates/templates-webapp/blob/master/app/northwind/customers.html">/northwind/customers.html</a></td>
+            <td><a href="https://github.com/NetCoreApps/WebApp/blob/master/src/apps/rockwind/northwind/customers.html">/northwind/customers.html</a></td>
         </tr>
         <tr>
             <th>Customers in London</th>
@@ -122,22 +136,22 @@ th:first-child {
         <tr>
             <th>Alfreds Futterkiste Details</th>
             <td><a href="/northwind/customer?id=ALFKI">/northwind/customer?id=ALFKI</a></td>
-            <td><a href="https://github.com/NetCoreTemplates/templates-webapp/blob/master/app/northwind/customer.html">/northwind/customer.html</a></td>
+            <td><a href="https://github.com/NetCoreApps/WebApp/blob/master/src/apps/rockwind/northwind/customer.html">/northwind/customer.html</a></td>
         </tr>
         <tr>
             <th>Order #10643</th>
             <td><a href="/northwind/order?id=10643">/northwind/order?id=10643</a></td>
-            <td><a href="https://github.com/NetCoreTemplates/templates-webapp/blob/master/app/northwind/order.html">/northwind/order.html</a></td>
+            <td><a href="https://github.com/NetCoreApps/WebApp/blob/master/src/apps/rockwind/northwind/order.html">/northwind/order.html</a></td>
         </tr>
         <tr>
             <th>Employee Nancy Davolio Details</th>
             <td><a href="/northwind/employee?id=1">/northwind/employee?id=1</a></td>
-            <td><a href="https://github.com/NetCoreTemplates/templates-webapp/blob/master/app/northwind/employee.html">/northwind/employee.html</a></td>
+            <td><a href="https://github.com/NetCoreApps/WebApp/blob/master/src/apps/rockwind/northwind/employee.html">/northwind/employee.html</a></td>
         </tr>
         <tr>
             <th>Chai Product Details</th>
             <td><a href="/northwind/products?id=1">/northwind/products?id=1</a></td>
-            <td><a href="https://github.com/NetCoreTemplates/templates-webapp/blob/master/app/northwind/products.html">/northwind/products.html</a></td>
+            <td><a href="https://github.com/NetCoreApps/WebApp/blob/master/src/apps/rockwind/northwind/products.html">/northwind/products.html</a></td>
         </tr>
         <tr>
             <th>Beverage Products</th>
@@ -166,7 +180,7 @@ th:first-child {
                 <div><a href="/api/customers?format=html">/api/customers?format=html</a></div>
                 <div style="margin:5px 0 0 0;color:#888;font-size:13px"><b>Accept</b> HTTP Header also supported</div>
             </td>
-            <td><a href="https://github.com/NetCoreTemplates/templates-webapp/blob/master/app/api/customers.html">/api/customers.html</a></td>
+            <td><a href="https://github.com/NetCoreApps/WebApp/blob/master/src/apps/rockwind/api/customers.html">/api/customers.html</a></td>
         </tr>
         <tr>
             <th>Alfreds Futterkiste Details</th>
@@ -211,7 +225,7 @@ th:first-child {
                 <div><a href="/api/products.csv">/api/products.csv</a></div>
                 <div><a href="/api/products.html">/api/products.html</a></div>
             </td>
-            <td><a href="https://github.com/NetCoreTemplates/templates-webapp/blob/master/app/api/products.html">/api/products.html</a></td>
+            <td><a href="https://github.com/NetCoreApps/WebApp/blob/master/src/apps/rockwind/api/products.html">/api/products.html</a></td>
         </tr>
         <tr>
             <th>Chai Product Details</th>

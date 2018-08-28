@@ -1,8 +1,9 @@
 <html>
 <head>
 <title>{{ title ?? 'Northwind dynamic data demo' }}</title>
-<link rel="stylesheet" href="../assets/css/bootstrap.css">
-<link rel="stylesheet" href="../assets/css/default.css">
+{{#if debug}}<script>{{ '/js/hot-loader.js' | includeFile }}</script>{{/if}}
+<link rel="stylesheet" href="/assets/css/bootstrap.css">
+<link rel="stylesheet" href="/assets/css/default.css">
 <style>
     body {
         padding: 40px;
@@ -17,18 +18,17 @@
     }
 </style>
 </head>
-<body>
-    <i hidden>{{ '/js/hot-fileloader.js' | ifDebugIncludeScript }}</i>
 
+<body>
     <a id="home" href="/"><img src="/assets/img/home-icon.jpg" alt="Home"></a>
 
     <h2 id="title">{{ title }}</h2>
 
     {{ page }}
 
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/default.js"></script>
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/default.js"></script>
 
     {{ scripts | raw }}
 

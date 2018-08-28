@@ -1,5 +1,5 @@
-name Rockwind SQLite Web App
 debug true
+name Rockwind WebApp
 contentRoot ~/../app
 webRoot ~/../app
 db sqlite
