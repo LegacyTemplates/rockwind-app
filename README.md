@@ -1,12 +1,12 @@
-# templates-webapp
+# rockwind-webapp
 
-[![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/templates-webapp.png)](http://templates-webapp.web-templates.io/)
+[![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/rockwind-webapp.png)](http://rockwind-webapp.web-templates.io/)
 
-> Browse [source code](https://github.com/NetCoreTemplates/templates-webapp), view live demo [templates-webapp.web-templates.io](http://templates-webapp.web-templates.io) and install with [dotnet-new](http://docs.servicestack.net/dotnet-new):
+> Browse [source code](https://github.com/NetCoreTemplates/rockwind-webapp), view live demo [rockwind-webapp.web-templates.io](http://rockwind-webapp.web-templates.io) and install with [dotnet-new](http://docs.servicestack.net/dotnet-new):
 
     $ npm install -g @servicestack/cli
 
-    $ dotnet-new templates-webapp ProjectName
+    $ dotnet-new rockwind-webapp ProjectName
 
 # .NET Core 2.1 Templates WebApp
 
