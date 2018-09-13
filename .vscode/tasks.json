@@ -6,8 +6,8 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "dotnet",
-            "args": ["web/app.dll", "../app/web.settings"],
+            "command": "web",
+            "args": [],
             "options": {
                 "cwd": "${workspaceFolder}"
             },
