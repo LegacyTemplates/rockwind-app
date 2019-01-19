@@ -8,10 +8,9 @@
 
 Run as a .NET Core Web App (Windows, macOS, Linux):
 
-    $ npm install -g @servicestack/cli
     $ dotnet tool install -g web
 
-    $ dotnet-new rockwind-webapp ProjectName
+    $ web new rockwind-webapp ProjectName
     $ cd ProjectName
     $ web
 
@@ -19,10 +18,9 @@ Run as a .NET Core Web App (Windows, macOS, Linux):
 
 Run as a Desktop App (Windows only):
 
-    $ npm install -g @servicestack/cli
-    $ dotnet tool install -g app
+    $ dotnet tool install -g web
 
-    $ dotnet-new rockwind-webapp ProjectName
+    $ app rockwind-webapp ProjectName
     $ cd ProjectName
     $ app
 
@@ -30,7 +28,7 @@ Run as a Desktop App (Windows only):
 
 ## Learn
 
-The [/support/northwind-data](https://github.com/NetCoreWebApps/WebApp/tree/master/src/support/northwind-data) project lets you quickly try out Rockwind against your local RDBMS by populating it with a copy of the Northwind database using the same sqlserver identifier and connection string from the App, e.g:
+The [/support/northwind-data](https://github.com/ServiceStack/dotnet-app/tree/master/src/support/northwind-data) project lets you quickly try out Rockwind against your local RDBMS by populating it with a copy of the Northwind database using the same sqlserver identifier and connection string from the App, e.g:
 
     $ dotnet run sqlserver "Server=localhost;Database=northwind;User Id=test;Password=test;"
 
