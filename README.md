@@ -2,7 +2,7 @@
 
 [![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/rockwind-webapp.png)](http://rockwind-webapp.web-templates.io/)
 
-> Browse [source code](https://github.com/NetCoreTemplates/rockwind-webapp), view live demo [rockwind-webapp.web-templates.io](http://rockwind-webapp.web-templates.io) and install with [dotnet-new](http://docs.servicestack.net/dotnet-new):
+> Browse [source code](https://github.com/NetCoreTemplates/rockwind-webapp), view live demo [rockwind-webapp.web-templates.io](http://rockwind-webapp.web-templates.io) and install with [dotnet-new](https://docs.servicestack.net/dotnet-new):
 
 ## Install
 
