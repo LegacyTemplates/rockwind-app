@@ -8,23 +8,23 @@
 
 Run as a .NET Core Web App (Windows, macOS, Linux):
 
-    $ dotnet tool install -g web
+    $ dotnet tool install -g x
 
-    $ web new rockwind-webapp ProjectName
+    $ x new rockwind-webapp ProjectName
     $ cd ProjectName
-    $ web
+    $ x
 
 > To run in VS Code type `Ctrl+Shift+B` to run the configured `build` task.
 
 Run as a Desktop App (Windows only):
 
-    $ dotnet tool install -g web
+    $ dotnet tool install -g x
 
     $ app rockwind-webapp ProjectName
     $ cd ProjectName
     $ app
 
-> Requires [.NET Core 2.1](https://www.microsoft.com/net/download/dotnet-core/2.1).
+> Requires [.NET Core 3.1](https://www.microsoft.com/net/download/dotnet-core/3.1).
 
 ## Learn
 
