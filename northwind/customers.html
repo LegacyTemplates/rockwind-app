@@ -49,7 +49,7 @@ sql = `${sql} ORDER BY CompanyName ${sqlLimit(limit)}`
 </form>
 
 {{ sql |> dbSelect({ id, city, country }) 
-       |> htmlDump({ className: "table table-striped details" }) }}
+       |> htmlDump({ className: "table table-striped details", display:'table' }) }}
 
 {{#raw appendTo scripts}}
 <script>
