@@ -1,12 +1,12 @@
 ```code|quiet
-var sql = `SELECT * FROM ${table.sqlVerifyFragment()}`
+var sql = `SELECT * FROM ${table.sqlQuote()}`
 var filters = []
 var ignore = 'db,format,orderby,skip,take'.split(',')
 
 #each qs.Keys where !ignore.contains(it.lower())
     `${it} = @${it}` |> addTo => filters
 /each
-#if !isEmpty(filters)
+#if !filters.isEmpty()
     sql = `${sql} WHERE ${filters.join(' AND ')}`
 /if
 #if qs.orderBy
