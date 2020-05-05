@@ -3,8 +3,8 @@ var ignore = 'db,format,orderby,skip,take'.split(',')
 var sql = `SELECT * FROM ${sqlQuote(table)}`
 
 var filters = []
-#each qs.Keys where !ignore.contains(it.lower())
-    `${it} = @${it}` |> addTo => filters
+#each qs.Keys where !ignore.contains(it.sqlVerifyFragment().lower())
+    `${sqlQuote(it)} = @${it}` |> addTo => filters
 /each
 #if !filters.isEmpty()
     sql = `${sql} WHERE ${filters.join(' AND ')}`
