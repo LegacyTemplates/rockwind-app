@@ -4,7 +4,7 @@ title: Order Details
 
 <a id="back" href="javascript:history.back()">&#8592; Back</a>
 
-{{ 'id' | importRequestParams }}
+{{ 'id' |> importRequestParams }}
 
 {{#if id}}
 
@@ -19,7 +19,8 @@ title: Order Details
           left join 
           Shipper s on o.ShipVia = s.Id
       where o.Id = @id` 
-    | dbSingle({ id }) | assignTo: order
+    |> dbSingle({ id }) 
+    |> to => order
   }}
 
   {{ `select p.ProductName, 
@@ -29,8 +30,8 @@ title: Order Details
         inner join
         Product p on od.ProductId = p.Id
       where OrderId = @id`
-    | dbSelect({ id }) 
-    | assignTo: orderDetails 
+    |> dbSelect({ id }) 
+    |> to => orderDetails 
   }}
 
   {{#with order}}
@@ -41,7 +42,7 @@ title: Order Details
         </tr>
         <tr>
             <th>Date</th>
-            <td>{{ OrderDate | dateFormat }}</td>
+            <td>{{ OrderDate |> dateFormat }}</td>
         </tr>
         <tr>
             <th>Customer Id</th>
@@ -57,7 +58,7 @@ title: Order Details
         </tr>
         <tr>
             <th>Shipping Cost</th>
-            <td>{{ Freight | currency }}</td>
+            <td>{{ Freight |> currency }}</td>
         </tr>
         <tr>
             <th>Shipped to</th>
@@ -71,7 +72,7 @@ title: Order Details
     {{ `There is no Order with id: ${id}` }}
   {{/with}}
 
-  {{ orderDetails | htmlDump({ className: "table table-striped", caption: "Line Items" }) }}
+  {{ orderDetails |> htmlDump({ className: "table table-striped", caption: "Line Items" }) }}
  
 {{/if}}
 

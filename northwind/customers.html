@@ -2,20 +2,27 @@
 title: Search Customers
 -->
 
-{{ 'id,city,country' | importRequestParams }}
-{{ qs.limit ?? 20 | assignTo: limit }}
+```code|q
+'id,city,country' |> importRequestParams
 
-{{ "select Id, CompanyName, ContactName, ContactTitle, City, Country from Customer" | assignTo: sql }}
+var limit = qs.limit ?? 20
+var sql = 'select Id, CompanyName, ContactName, ContactTitle, City, Country from Customer'
 
-{{#if id}}      {{ 'Id = @id'           | addTo: filters }} {{/if}}
-{{#if city}}    {{ 'City = @city'       | addTo: filters }} {{/if}}
-{{#if country}} {{ 'Country = @country' | addTo: filters }} {{/if}}
+#if !PathArgs.isEmpty()
+   `${sql} where Id = @id` |> dbSingle({ id: PathArgs[0] }) |> return
+/if
 
-{{#if !isEmpty(filters)}}
-  {{ `${sql} WHERE ${join(filters, ' AND ')}` | assignTo: sql }}
-{{/if}}
+var filters = []
+'Id = @id'           |> ifNotEmpty(id)      |> addTo => filters
+'City = @city'       |> ifNotEmpty(city)    |> addTo => filters
+'Country = @country' |> ifNotEmpty(country) |> addTo => filters
 
-{{ `${sql} ORDER BY CompanyName ${sqlLimit(limit)}` | assignTo: sql }}
+#if !filters.isEmpty()
+  sql = `${sql} WHERE ${filters.join(' AND ')}`
+/if
+
+sql = `${sql} ORDER BY CompanyName ${sqlLimit(limit)}`
+```
 
 <a id="back" href="javascript:history.back()">&#8592; Back</a>
 
@@ -24,14 +31,14 @@ title: Search Customers
     <select class="custom-select mb-2 mr-sm-2 mb-sm-0" name="country" id="country">
         <option value=""></option>
         {{#each dbSelect("select distinct Country from Customer order by Country") }}
-            <option {{ {selected: country == Country} | htmlAttrs }}>{{ Country }}</option>
+            <option {{ {selected: country == Country} |> htmlAttrs }}>{{ Country }}</option>
         {{/each}}
     </select>
     <label class="mr-sm-2" for="city">City</label>
     <select class="custom-select mb-2 mr-sm-2 mb-sm-0" name="city" id="city">
         <option value=""></option>
         {{#each dbSelect("select distinct City from Customer order by City") }}
-            <option {{ {selected: city == City} | htmlAttrs }}>{{ City }}</option>
+            <option {{ {selected: city == City} |> htmlAttrs }}>{{ City }}</option>
         {{/each}}
     </select>
 
@@ -41,8 +48,8 @@ title: Search Customers
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-{{ sql | dbSelect({ id, city, country }) 
-       | htmlDump({ className: "table table-striped details" }) }}
+{{ sql |> dbSelect({ id, city, country }) 
+       |> htmlDump({ className: "table table-striped details" }) }}
 
 {{#raw appendTo scripts}}
 <script>

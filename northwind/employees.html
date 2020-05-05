@@ -4,9 +4,9 @@ title: Employees
 
 <a id="back" href="javascript:history.back()">&#8592; Back</a>
 
-{{ "select Id, TitleOfCourtesy as Title, FirstName, LastName, City, Region, Country, HomePhone, Extension from Employee" | assignTo: sql }}
+{{ var sql = "select Id, TitleOfCourtesy as Title, FirstName, LastName, City, Region, Country, HomePhone, Extension from Employee" }}
 
-{{ sql | dbSelect | htmlDump({ className: "table table-striped details" }) }}
+{{ sql |> dbSelect |> htmlDump({ className: "table table-striped details" }) }}
 
 {{#raw appendTo scripts}}
 <script>

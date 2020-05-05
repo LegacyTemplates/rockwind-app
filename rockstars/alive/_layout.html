@@ -2,7 +2,6 @@
 <html>
 <head>
 <title>Alive Rockstars - {{ title }}</title>
-{{#if debug}}<script>{{ '/js/hot-loader.js' | includeFile }}</script>{{/if}}
 <link href="../../default.css" rel="stylesheet" />
 <style type="text/css">
 body {
@@ -15,6 +14,8 @@ a {
 </style>
 </head>
     <body>
+        <i hidden>{{ '/js/hot-loader.js' |> ifDebugIncludeScript }}</i>
+
         <a id="back" href="../../../">&#8592; Home</a>
 
         <div id="page">
@@ -27,14 +28,14 @@ a {
 
             <h1>{{ title }}</h1>
             
-            {{ "menu-alive" | partial }}
+            {{ "menu-alive" |> partial }}
         
             <div id="content">
                 {{ page }}
                 <b class="clear"></b>
             </div>
             
-            {{ "menu-dead" | partial }}
+            {{ "menu-dead" |> partial }}
         </div>
 
     </body>

@@ -1,7 +1,6 @@
 <html>
 <head>
 <title>{{ title ?? 'Northwind dynamic data demo' }}</title>
-{{#if debug}}<script>{{ '/js/hot-loader.js' | includeFile }}</script>{{/if}}
 <link rel="stylesheet" href="/assets/css/bootstrap.css">
 <link rel="stylesheet" href="/assets/css/default.css">
 <style>
@@ -18,8 +17,9 @@
     }
 </style>
 </head>
-
 <body>
+    <i hidden>{{ '/js/hot-loader.js' |> ifDebugIncludeScript }}</i>
+
     <a id="home" href="/"><img src="/assets/img/home-icon.jpg" alt="Home"></a>
 
     <h2 id="title">{{ title }}</h2>
@@ -30,7 +30,7 @@
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/default.js"></script>
 
-    {{ scripts | raw }}
+    {{ scripts |> raw }}
 
 </body>
 

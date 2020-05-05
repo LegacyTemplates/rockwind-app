@@ -4,12 +4,11 @@ title: Employee Details
 
 <a id="back" href="javascript:history.back()">&#8592; Back</a>
 
-{{ 'id' | importRequestParams }}
+{{ 'id' |> importRequestParams }}
 
 {{#if id}}
 
-    {{ "select * from Employee where Id = @id" | dbSingle({ id }) 
-       | assignTo: employee }}
+    {{ "select * from Employee where Id = @id" |> dbSingle({ id }) |> to => employee }}
 
     {{#if employee}}
         <table class="table table-bordered auto-width">
@@ -25,8 +24,8 @@ title: Employee Details
                 inner join 
                 Region r on t.RegionId = r.Id
             where et.EmployeeId = @id`
-        | dbSelect({ id }) 
-        | htmlDump({ className: "table table-striped auto-width", caption: "Employee Territories"}) }}
+        |> dbSelect({ id }) 
+        |> htmlDump({ className: "table table-striped auto-width", caption: "Employee Territories"}) }}
                 
     {{else}}
         {{ `No Employee has id: ${id}` }}

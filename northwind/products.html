@@ -4,34 +4,40 @@ title: Products
 
 <a id="back" href="javascript:history.back()">&#8592; Back</a>
 
-{{ 'id,category,supplier,nameContains' | importRequestParams }}
+```code|q
+'id,category,supplier,nameContains' |> importRequestParams
 
-{{ `select p.Id, 
+var limit = qs.limit ?? 100
+
+{{ `SELECT p.Id, 
            ProductName,
            c.CategoryName Category,
            s.CompanyName Supplier, 
            QuantityPerUnit, 
            ${sqlCurrency("UnitPrice")} UnitPrice, 
            UnitsInStock, UnitsOnOrder, ReorderLevel   
-      from Product p
-           inner join Category c on p.CategoryId = c.Id
-           inner join Supplier s on p.SupplierId = s.Id
-     where Discontinued = 0`
-  | assignTo: sql }}
+      FROM Product p
+           INNER JOIN Category c on p.CategoryId = c.Id
+           INNER JOIN Supplier s on p.SupplierId = s.Id
+     WHERE Discontinued = 0`
+  |> to => sql }}
 
-{{#if !isEmpty(PathArgs)}}
-  {{ `${sql} and p.Id = @id` | dbSingle({ id: PathArgs[0] }) 
-     | return }}
-{{/if}}
+#if !PathArgs.isEmpty()
+  `${sql} and p.Id = @id` |> dbSingle({ id: PathArgs[0] }) |> return
+/if
 
-{{#if id}}           {{ 'p.Id = @id'                 | addTo: filters }} {{/if}}
-{{#if category}}     {{ 'c.CategoryName = @category' | addTo: filters }} {{/if}}
-{{#if supplier}}     {{ 's.CompanyName = @supplier'  | addTo: filters }} {{/if}}
-{{#if nameContains}} {{ 'ProductName LIKE @name'     | addTo: filters }} {{/if}}
+var filters = []
+'p.Id = @id'                 |> ifNotEmpty(id)           |> addTo => filters
+'c.CategoryName = @category' |> ifNotEmpty(category)     |> addTo => filters
+'s.CompanyName = @supplier'  |> ifNotEmpty(supplier)     |> addTo => filters
+'ProductName LIKE @name'     |> ifNotEmpty(nameContains) |> addTo => filters
 
-{{#if !isEmpty(filters)}}
-  {{ `${sql} and ${join(filters, ' and ')} ORDER BY CompanyName ${sqlLimit(limit)}` | assignTo: sql }}
-{{/if}}
+#if !filters.isEmpty()
+  sql = `${sql} AND ${filters.join(' AND ')}`
+/if
 
-{{ sql  | dbSelect({ id, category, supplier, name: `%${nameContains}%` }) 
-        | htmlDump({ className: "table table-striped" }) }}
+sql = `${sql} ORDER BY CompanyName ${sqlLimit(limit)}`
+```
+
+{{ sql |> dbSelect({ id, category, supplier, name: `%${nameContains}%` }) 
+       |> htmlDump({ className: "table table-striped" }) }}

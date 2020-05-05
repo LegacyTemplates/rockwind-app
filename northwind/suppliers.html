@@ -4,6 +4,6 @@ title: Suppliers
 
 <a id="back" href="javascript:history.back()">&#8592; Back</a>
 
-{{ "select Id, CompanyName, ContactName, ContactTitle, City, PostalCode, Country, Phone from Supplier" | assignTo: sql }}
+{{ var sql = "select Id, CompanyName, ContactName, ContactTitle, City, PostalCode, Country, Phone from Supplier"  }}
 
-{{ sql | dbSelect | htmlDump({ className: "table table-striped" }) }}
+{{ sql |> dbSelect |> htmlDump({ className: "table table-striped" }) }}

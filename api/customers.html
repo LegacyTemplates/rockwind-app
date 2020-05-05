@@ -1,22 +1,23 @@
-{{ 'id,city,country' | importRequestParams }}
-{{ qs.limit ?? 100 | assignTo: limit }}
+```code|q
+'id,city,country' |> importRequestParams
 
-{{ 'select Id, CompanyName, ContactName, ContactTitle, City, Country from Customer' | assignTo: sql }}
+var limit = qs.limit ?? 100
+var sql = 'select Id, CompanyName, ContactName, ContactTitle, City, Country from Customer'
 
-{{#if !isEmpty(PathArgs)}}
-   {{ `${sql} where Id = @id` | dbSingle({ id: PathArgs[0] }) 
-      | return }}
-{{/if}}
+#if !PathArgs.isEmpty()
+   `${sql} where Id = @id` |> dbSingle({ id: PathArgs[0] }) |> return
+/if
 
-{{#if id}}      {{ 'Id = @id'           | addTo: filters }} {{/if}}
-{{#if city}}    {{ 'City = @city'       | addTo: filters }} {{/if}}
-{{#if country}} {{ 'Country = @country' | addTo: filters }} {{/if}}
+var filters = []
+'Id = @id'           |> ifExists(id)      |> addTo => filters
+'City = @city'       |> ifExists(city)    |> addTo => filters
+'Country = @country' |> ifExists(country) |> addTo => filters
 
-{{#if !isEmpty(filters)}}
-  {{ `${sql} WHERE ${join(filters, ' AND ')}` | assignTo: sql }}
-{{/if}}
+#if !filters.isEmpty()
+  sql = `${sql} WHERE ${filters.join(' AND ')}`
+/if
 
-{{ `${sql} ORDER BY CompanyName ${sqlLimit(limit)}` | assignTo: sql }}
+sql = `${sql} ORDER BY CompanyName ${sqlLimit(limit)}`
 
-{{ sql | dbSelect({ id, city, country }) 
-       | return }}
+sql |> dbSelect({ id, city, country }) |> return
+```

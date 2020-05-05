@@ -4,13 +4,13 @@
     "/rockstars/dead/jackson/": "Michael Jackson",
     "/rockstars/dead/joplin/": "Janis Joplin",
     "/rockstars/dead/presley/": "Elvis Presley"
-} | assignTo: links }}
+} |> to => links }}
 
 <div class="menu">
     <ul>
         <li class="label"><b>Past Rockstars:</b></li>
-        {{#each toList(links)}}
-            <li {{ {active: Key == PathInfo} | htmlClass }}><a href="{{Key}}">{{Value}}</a></li>
+        {{#each links.toList() }}
+            <li {{ {active: Key == PathInfo} |> htmlClass }}><a href="{{Key}}">{{Value}}</a></li>
         {{/each}}
     </ul>                
 </div>

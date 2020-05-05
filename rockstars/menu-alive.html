@@ -3,13 +3,13 @@
     "/rockstars/alive/vedder/": "Eddie Vedder",
     "/rockstars/alive/springsteen/": "Bruce Springsteen",
     "/rockstars/alive/love/": "Courtney Love"
-} | assignTo: links }}
+} |> to => links }}
 
 <div class="menu">
     <ul>
         <li class="label"><b>Living Rockstars:</b></li>
         {{#each toList(links)}}
-            <li {{ {active: Key == PathInfo} | htmlClass }}><a href="{{Key}}">{{Value}}</a></li>
+            <li {{ {active: Key == PathInfo} |> htmlClass }}><a href="{{Key}}">{{Value}}</a></li>
         {{/each}}
     </ul>                
 </div>
