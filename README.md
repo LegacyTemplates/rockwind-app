@@ -1,8 +1,8 @@
-# rockwind-webapp
+# rockwind-app
 
-[![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/rockwind-webapp.png)](http://rockwind-webapp.web-templates.io/)
+[![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/rockwind-app.png)](http://rockwind-app.web-templates.io/)
 
-> Browse [source code](https://github.com/NetCoreTemplates/rockwind-webapp), view live demo [rockwind-webapp.web-templates.io](http://rockwind-webapp.web-templates.io) and install with [dotnet-new](https://docs.servicestack.net/dotnet-new):
+> Browse [source code](https://github.com/NetCoreTemplates/rockwind-app), view live demo [rockwind-app.web-templates.io](http://rockwind-app.web-templates.io) and install with [dotnet-new](https://docs.servicestack.net/dotnet-new):
 
 ## Install
 
@@ -10,7 +10,7 @@ Run as a .NET Core Web App (Windows, macOS, Linux):
 
     $ dotnet tool install -g x
 
-    $ x new rockwind-webapp ProjectName
+    $ x new rockwind-app ProjectName
     $ cd ProjectName
     $ x
 
@@ -20,7 +20,7 @@ Run as a Desktop App (Windows only):
 
     $ dotnet tool install -g x
 
-    $ app rockwind-webapp ProjectName
+    $ app rockwind-app ProjectName
     $ cd ProjectName
     $ app
 
