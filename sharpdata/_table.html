@@ -1,23 +1,21 @@
 ```code|quiet
-var ignore = 'db,format,orderby,skip,take'.split(',')
-var sql = `SELECT * FROM ${sqlQuote(table)}`
-
+var ignore = ['db','fields','format','orderby','skip','take']
+var fields = qs.fields ? qs.fields.split(',').map(x => sqlQuote(x)).join(',') : '*'
+var sql = `SELECT ${fields} FROM ${sqlQuote(table)}`
 var filters = []
 #each qs.Keys where !ignore.contains(it.sqlVerifyFragment().lower())
-    `${sqlQuote(it)} = @${it}` |> addTo => filters
+    `${sqlQuote(it).sqlCast('varchar')} = @${it}` |> addTo => filters
 /each
 #if !filters.isEmpty()
     sql = `${sql} WHERE ${filters.join(' AND ')}`
 /if
-
 #if qs.orderBy
     sql = `${sql} ORDER BY ${sqlOrderByFields(qs.orderBy)}`
 /if
 #if qs.skip || qs.take
     sql = `${sql} ${sqlLimit(qs.skip,qs.take)}`
 /if
-
-sql |> dbSelect(queryDictionary.withoutKeys(ignore)) |> return
+sql |> dbSelect(qs.toObjectDictionary().withoutKeys(ignore)) |> return
 ```
-{{sql}}
+{{ ifError |> show(sql) }}
 {{htmlError}}
