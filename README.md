@@ -24,7 +24,7 @@ Run as a Desktop App (Windows only):
     $ cd ProjectName
     $ app
 
-> Requires [.NET Core 3.1](https://www.microsoft.com/net/download/dotnet-core/3.1).
+> Requires [.NET Core 5.0](https://dotnet.microsoft.com/download/).
 
 ## Learn
 
