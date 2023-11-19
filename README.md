@@ -10,7 +10,7 @@ Run as a .NET Core Web App (Windows, macOS, Linux):
 
     $ dotnet tool install -g x
 
-    $ x new rockwind-app ProjectName
+    $ x new LegacyTemplates/rockwind-app ProjectName
     $ cd ProjectName
     $ x
 
@@ -20,7 +20,7 @@ Run as a Desktop App (Windows only):
 
     $ dotnet tool install -g x
 
-    $ app rockwind-app ProjectName
+    $ app LegacyTemplates/rockwind-app ProjectName
     $ cd ProjectName
     $ app
 
